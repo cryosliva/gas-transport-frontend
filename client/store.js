@@ -1,14 +1,15 @@
-import { createStore, combineReducers, applyMiddleware } from ‘redux’;
-import exampleReducer from ‘./reducers/exampleReducer;
-import thunk from ‘redux-thunk’;
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+// import thunk from 'redux-thunk';
+
+// import exampleReducer from './reducers/exampleReducer';
 
 const reducer = combineReducers({
-  exampleReducer
+  // exampleReducer,
 });
 
 const store = createStore(
   reducer,
-  applyMiddleware(thunk)
+  // applyMiddleware(thunk),
 );
 
 export default store;

@@ -4,14 +4,14 @@ class Users extends Component {
   constructor() {
     super();
     this.state = {
-      users: []
+      users: [],
     };
   }
 
   componentDidMount() {
     fetch('/api/users')
       .then(res => res.json())
-      .then(users => this.setState({users}, () => console.log('Users fetched...', users)));
+      .then(users => this.setState({ users }, () => console.log('Users fetched...', users)));
   }
 
   render() {
@@ -19,9 +19,8 @@ class Users extends Component {
       <div>
         <h2>Users</h2>
         <ul>
-        {this.state.users.map(user =>
-          <li key={user.id}>{user.firstName} {user.lastName}</li>
-        )}
+          {this.state.users.map(user =>
+            <li key={user.id}>{user.firstName} {user.lastName}</li>)}
         </ul>
       </div>
     );
