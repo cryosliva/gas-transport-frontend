@@ -11,27 +11,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TramIncorporated/tram-web.git"
+    "url": "git+https://github.com/cryosliva/gas-transport-frontend.git"
   },
   "author": "Karolina Tretyakova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TramIncorporated/tram-web/issues"
+    "url": "https://github.com/cryosliva/gas-transport-frontend/issues"
   },
-  "homepage": "https://github.com/TramIncorporated/tram-web#readme",
+  "homepage": "https://github.com/cryosliva/gas-transport-frontend#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "concurrently": "^3.5.1",
     "express": "^4.16.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "recompose": "^0.28.2",
     "redux": "^4.0.0",
+    "redux-observable": "^1.0.0",
+    "redux-thunk": "^2.3.0",
+    "typed-actions": "^0.9.1",
     "webpack": "^4.12.0",
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -42,9 +50,9 @@
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.9.1",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "nodemon": "^1.17.5",

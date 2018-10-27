@@ -1,15 +1,19 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-// import thunk from 'redux-thunk';
+import {createStore, combineReducers} from 'redux';
 
-// import exampleReducer from './reducers/exampleReducer';
+const reducer = combineReducers({});
 
-const reducer = combineReducers({
-  // exampleReducer,
+const getInitialState = () => ({
+    user: {
+        login: 'katretyakova',
+    },
 });
 
 const store = createStore(
-  reducer,
-  // applyMiddleware(thunk),
+    reducer,
+    ...getInitialState(),
+    {
+        user: Promise.resolve(),
+    },
 );
 
 export default store;

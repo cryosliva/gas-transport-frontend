@@ -2,14 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.get('/api/users', (req, res) => {
-  const users = [
-    { id: 1, firstName: 'John', lastName: 'Doe' },
-    { id: 2, firstName: 'Steve', lastName: 'Smith' },
-    { id: 3, firstName: 'Mary', lastName: 'Swanson' },
-  ];
+app.get('/api/profile', (req, res) => {
+    const user = {};
 
-  res.json(users);
+    res.json(user);
 });
 
 const port = 5000;
