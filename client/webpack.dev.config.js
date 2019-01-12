@@ -12,12 +12,10 @@ module.exports = {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
-        },
-        {
+        }, {
             test: /\.less$/,
             loaders: ['style-loader', 'css-loader', 'less-loader'],
-        },
-        {
+        }, {
             test: /\.css$/,
             use: [
                 {loader: 'style-loader'},
@@ -26,6 +24,21 @@ module.exports = {
                     options: {
                         modules: true,
                         localIdentName: '[name]__[local]-[hash:base64:5]',
+                    },
+                },
+            ],
+        }, {
+            test: /\.svg$/,
+            loader: 'svg-inline-loader',
+        }, {
+            test: /\.(gif|png|jpe?g|svg)$/i,
+            use: [
+                'file-loader',
+                {
+                    loader: 'image-webpack-loader',
+                    options: {
+                        bypassOnDebug: true,
+                        disable: true,
                     },
                 },
             ],
