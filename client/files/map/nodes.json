@@ -1,2213 +1,2213 @@
 {
     "nodes": [
         {
-            "latitude": 67.0,
-            "longitude": 74.0,
+            "latitude": 67.92,
+            "longitude": 74.92,
             "node": "Ямбург",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 64.0,
-            "longitude": 77.0,
+            "latitude": 64.94,
+            "longitude": 77.61,
             "node": "Пуровская",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 66.0,
-            "longitude": 76.0,
+            "latitude": 66.67,
+            "longitude": 76.75,
             "node": "Уренгой",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 65.0,
-            "longitude": 74.0,
+            "latitude": 65.46,
+            "longitude": 74.25,
             "node": "Пангоды",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 64.0,
-            "longitude": 77.0,
+            "latitude": 64.91,
+            "longitude": 77.76,
             "node": "Таркосале",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 64.0,
-            "longitude": 77.0,
+            "latitude": 64.91,
+            "longitude": 77.76,
             "node": "Таркосале КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 64.0,
-            "longitude": 76.0,
+            "latitude": 64.75,
+            "longitude": 76.67,
             "node": "Губкинская",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 64.0,
-            "longitude": 76.0,
+            "latitude": 64.75,
+            "longitude": 76.67,
             "node": "Губкинская КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
             "latitude": 63.0,
-            "longitude": 76.0,
+            "longitude": 76.67,
             "node": "Вынгапуровская",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 58.0,
-            "longitude": 78.0,
+            "latitude": 58.5,
+            "longitude": 78.17,
             "node": "Мыльджинское",
             "region": "Томская",
             "type": "Месторождение"
         },
         {
-            "latitude": 61.0,
-            "longitude": 64.0,
+            "latitude": 61.47,
+            "longitude": 64.33,
             "node": "Таежная",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 61.0,
-            "longitude": 64.0,
+            "latitude": 61.47,
+            "longitude": 64.33,
             "node": "Таежная КС",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 60.0,
-            "longitude": 76.0,
+            "latitude": 60.83,
+            "longitude": 76.83,
             "node": "Нижневартовский",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 59.0,
-            "longitude": 79.0,
+            "latitude": 59.23,
+            "longitude": 79.4,
             "node": "Вертикос",
             "region": "Томская",
             "type": "Месторождение"
         },
         {
-            "latitude": 59.0,
-            "longitude": 79.0,
+            "latitude": 59.23,
+            "longitude": 79.4,
             "node": "Вертикос КС",
             "region": "Томская",
             "type": "КС"
         },
         {
-            "latitude": 63.0,
-            "longitude": 57.0,
+            "latitude": 63.67,
+            "longitude": 57.5,
             "node": "Вуктыл",
             "region": "Коми",
             "type": "Месторождение"
         },
         {
-            "latitude": -51.0,
-            "longitude": 54.0,
+            "latitude": 51.67,
+            "longitude": 54.67,
             "node": "Оренбург",
             "region": "Оренбургская",
             "type": "Месторождение"
         },
         {
-            "latitude": 46.0,
+            "latitude": 46.67,
             "longitude": 48.0,
             "node": "Астраханское",
             "region": "Астраханская",
             "type": "Месторождение"
         },
         {
-            "latitude": 46.0,
+            "latitude": 46.67,
             "longitude": 48.0,
             "node": "Астраханское КС",
             "region": "Астраханская",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 74.0,
+            "latitude": 61.13,
+            "longitude": 74.83,
             "node": "БП Локосово",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 61.0,
-            "longitude": 74.0,
+            "latitude": 61.13,
+            "longitude": 74.83,
             "node": "БП Локосово КС",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 60.0,
-            "longitude": 72.0,
+            "latitude": 60.33,
+            "longitude": 72.31,
             "node": "Южно-Балыкск",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "Месторождение"
         },
         {
             "latitude": 67.0,
-            "longitude": 79.0,
+            "longitude": 79.5,
             "node": "Заполярное",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
             "latitude": 67.0,
-            "longitude": 79.0,
+            "longitude": 79.5,
             "node": "Заполярное КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 70.0,
-            "longitude": 68.0,
+            "latitude": 70.5,
+            "longitude": 68.5,
             "node": "Бованенковское",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 70.0,
-            "longitude": 68.0,
+            "latitude": 70.5,
+            "longitude": 68.5,
             "node": "Бованенковское КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 52.0,
-            "longitude": 55.0,
+            "latitude": 52.85,
+            "longitude": 55.77,
             "node": "Канчуринско-Мусинский комплекс ПХГ",
             "region": "Башкортостан",
             "type": "ПХГ"
         },
         {
-            "latitude": 52.0,
-            "longitude": 55.0,
+            "latitude": 52.85,
+            "longitude": 55.77,
             "node": "Канчуринско-Мусинский комплекс ПХГ_пр",
             "region": "Башкортостан",
             "type": "ПХГ"
         },
         {
-            "latitude": 45.0,
-            "longitude": 43.0,
+            "latitude": 45.05,
+            "longitude": 43.27,
             "node": "Северо-Ставропольские ПХГ",
             "region": "Ставропольский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 45.0,
-            "longitude": 43.0,
+            "latitude": 45.05,
+            "longitude": 43.27,
             "node": "Северо-Ставропольские ПХГ_пр",
             "region": "Ставропольский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 46.0,
-            "longitude": 39.0,
+            "latitude": 46.55,
+            "longitude": 39.67,
             "node": "Кущевское ПХГ",
             "region": "Краснодарский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 46.0,
-            "longitude": 39.0,
+            "latitude": 46.55,
+            "longitude": 39.67,
             "node": "Кущевское ПХГ_пр",
             "region": "Краснодарский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 45.0,
-            "longitude": 38.0,
+            "latitude": 45.03,
+            "longitude": 38.98,
             "node": "Краснодарское ПХГ",
             "region": "Краснодарский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 45.0,
-            "longitude": 38.0,
+            "latitude": 45.03,
+            "longitude": 38.98,
             "node": "Краснодарское ПХГ_пр",
             "region": "Краснодарский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 59.0,
-            "longitude": 30.0,
+            "latitude": 59.5,
+            "longitude": 30.13,
             "node": "Гатчинское ПХГ",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "ПХГ"
         },
         {
-            "latitude": 59.0,
-            "longitude": 30.0,
+            "latitude": 59.57,
+            "longitude": 30.13,
             "node": "Гатчинское ПХГ_пр",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "ПХГ"
         },
         {
-            "latitude": 58.0,
-            "longitude": 32.0,
+            "latitude": 58.33,
+            "longitude": 32.32,
             "node": "Невское ПХГ",
             "region": "Новгородская",
             "type": "ПХГ"
         },
         {
-            "latitude": 58.0,
-            "longitude": 32.0,
+            "latitude": 58.33,
+            "longitude": 32.32,
             "node": "Невское ПХГ_пр",
             "region": "Новгородская",
             "type": "ПХГ"
         },
         {
-            "latitude": 55.0,
-            "longitude": 35.0,
+            "latitude": 55.51,
+            "longitude": 35.37,
             "node": "Калужское ПХГ",
             "region": "Калужская",
             "type": "ПХГ"
         },
         {
-            "latitude": 55.0,
-            "longitude": 35.0,
+            "latitude": 55.51,
+            "longitude": 35.37,
             "node": "Калужское ПХГ_пр",
             "region": "Калужская",
             "type": "ПХГ"
         },
         {
-            "latitude": 55.0,
-            "longitude": 37.0,
+            "latitude": 55.81,
+            "longitude": 37.75,
             "node": "Щелковское ПХГ",
             "region": "Московская",
             "type": "ПХГ"
         },
         {
-            "latitude": 55.0,
-            "longitude": 37.0,
+            "latitude": 55.81,
+            "longitude": 37.75,
             "node": "Щелковское ПХГ_пр",
             "region": "Москва",
             "type": "ПХГ"
         },
         {
-            "latitude": 54.0,
-            "longitude": 41.0,
+            "latitude": 54.92,
+            "longitude": 41.25,
             "node": "Касимовское, Увязовское ПХГ",
             "region": "Рязанская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 41.0,
+            "latitude": 54.92,
+            "longitude": 41.25,
             "node": "Касимовское, Увязовское ПХГ_пр",
             "region": "Рязанская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 52.0,
+            "latitude": 56.51,
+            "longitude": 52.73,
             "node": "Карашурское ПХГ",
             "region": "Удмуртская",
             "type": "Город"
         },
         {
-            "latitude": 56.0,
-            "longitude": 52.0,
+            "latitude": 56.51,
+            "longitude": 52.73,
             "node": "Карашурское ПХГ_пр",
             "region": "Удмуртская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 50.0,
+            "latitude": 53.18,
+            "longitude": 50.12,
             "node": "Самарские ПХГ",
             "region": "Самарская",
             "type": "ПХГ"
         },
         {
-            "latitude": 53.0,
-            "longitude": 50.0,
+            "latitude": 53.18,
+            "longitude": 50.12,
             "node": "Самарские ПХГ_пр",
             "region": "Самарская",
             "type": "ПХГ"
         },
         {
-            "latitude": 62.0,
-            "longitude": 64.0,
+            "latitude": 62.75,
+            "longitude": 64.35,
             "node": "Пунгинское ПХГ",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "ПХГ"
         },
         {
-            "latitude": 62.0,
-            "longitude": 64.0,
+            "latitude": 62.75,
+            "longitude": 64.35,
             "node": "Пунгинское ПХГ_пр",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "ПХГ"
         },
         {
-            "latitude": 51.0,
+            "latitude": 51.67,
             "longitude": 60.0,
             "node": "Совхозное ПХГ",
             "region": "Оренбургская",
             "type": "ПХГ"
         },
         {
-            "latitude": 51.0,
+            "latitude": 51.67,
             "longitude": 60.0,
             "node": "Совхозное ПХГ_пр",
             "region": "Оренбургская",
             "type": "ПХГ"
         },
         {
-            "latitude": 51.0,
+            "latitude": 51.53,
             "longitude": 46.0,
             "node": "Саратовские ПХГ",
             "region": "Саратовская",
             "type": "ПХГ"
         },
         {
-            "latitude": 51.0,
+            "latitude": 51.53,
             "longitude": 46.0,
             "node": "Саратовские ПХГ_пр",
             "region": "Саратовская",
             "type": "ПХГ"
         },
         {
-            "latitude": 65.0,
-            "longitude": 73.0,
+            "latitude": 65.32,
+            "longitude": 73.04,
             "node": "КС Надым",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 63.0,
-            "longitude": 75.0,
+            "latitude": 63.24,
+            "longitude": 75.55,
             "node": "Вынгапуровская КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 64.0,
-            "longitude": 72.0,
+            "latitude": 64.68,
+            "longitude": 72.37,
             "node": "КС Ягельная",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 60.0,
-            "longitude": 72.0,
+            "latitude": 60.56,
+            "longitude": 72.52,
             "node": "Южно-Балыкск КС",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 59.0,
+            "latitude": 50.77,
+            "longitude": 59.54,
             "node": "Домбаровка (Казахстан)",
             "region": "Оренбургская",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 48.0,
+            "latitude": 50.14,
+            "longitude": 48.64,
             "node": "Ал.Гай (Казахстан)",
             "region": "Саратовская",
             "type": "КС"
         },
         {
-            "latitude": 46.0,
-            "longitude": 49.0,
+            "latitude": 46.66,
+            "longitude": 49.06,
             "node": "Акколь (Казахстан)",
             "region": "Казахстан",
             "type": "КС"
         },
         {
-            "latitude": 68.0,
-            "longitude": 75.0,
+            "latitude": 68.05,
+            "longitude": 75.59,
             "node": "Ямбург КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 64.0,
-            "longitude": 77.0,
+            "latitude": 64.94,
+            "longitude": 77.61,
             "node": "Пуровская КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 66.0,
-            "longitude": 76.0,
+            "latitude": 66.67,
+            "longitude": 76.75,
             "node": "Уренгой КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Месторождение"
         },
         {
-            "latitude": 64.0,
-            "longitude": 69.0,
+            "latitude": 64.21,
+            "longitude": 69.04,
             "node": "КС Сорум",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 64.0,
-            "longitude": 69.0,
+            "latitude": 64.01,
+            "longitude": 69.57,
             "node": "Сосновская КС",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 63.0,
-            "longitude": 67.0,
+            "latitude": 63.7,
+            "longitude": 67.24,
             "node": "Казым (новоказымская)",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 69.0,
+            "latitude": 59.97,
+            "longitude": 69.92,
             "node": "Бобровская КС",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 66.0,
-            "longitude": 72.0,
+            "latitude": 66.62,
+            "longitude": 72.92,
             "node": "Ныдинская КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 65.0,
-            "longitude": 74.0,
+            "latitude": 65.46,
+            "longitude": 74.25,
             "node": "Пангоды КС",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "КС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 40.0,
+            "latitude": 44.7,
+            "longitude": 40.12,
             "node": "КС Майкопская",
             "region": "Адыгея",
             "type": "КС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 40.0,
+            "latitude": 44.62,
+            "longitude": 40.12,
             "node": "г. Майкоп",
             "region": "Адыгея",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 84.0,
+            "latitude": 55.79,
+            "longitude": 84.67,
             "node": "Проскоково",
             "region": "Кемеровская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 83.0,
+            "latitude": 53.35,
+            "longitude": 83.77,
             "node": "Барнаул",
             "region": "Алтайский край",
             "type": "Город"
         },
         {
-            "latitude": 61.0,
-            "longitude": 48.0,
+            "latitude": 61.74,
+            "longitude": 48.47,
             "node": "Урдома КС-13",
             "region": "Архангельская",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 47.0,
+            "latitude": 61.3,
+            "longitude": 47.17,
             "node": "Коряжма",
             "region": "Архангельская",
             "type": "Город"
         },
         {
-            "latitude": 46.0,
-            "longitude": 48.0,
+            "latitude": 46.34,
+            "longitude": 48.03,
             "node": "Астрахань",
             "region": "Астраханская",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 56.0,
+            "latitude": 54.37,
+            "longitude": 56.18,
             "node": "Кармаскалинская",
             "region": "Башкортостан",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 55.0,
+            "latitude": 54.79,
+            "longitude": 55.76,
             "node": "Поляна",
             "region": "Башкортостан",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 59.0,
+            "latitude": 55.45,
+            "longitude": 59.89,
             "node": "Аркаулово",
             "region": "Башкортостан",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 55.0,
+            "latitude": 54.73,
+            "longitude": 55.97,
             "node": "Уфа",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 55.0,
+            "latitude": 53.63,
+            "longitude": 55.93,
             "node": "Cтерлитамак",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 55.0,
+            "latitude": 54.7,
+            "longitude": 55.8,
             "node": "Н. Александровка",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 58.0,
+            "latitude": 53.34,
+            "longitude": 58.51,
             "node": "Аскара",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 58.0,
+            "latitude": 53.97,
+            "longitude": 58.4,
             "node": "Белорецк",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 52.0,
-            "longitude": 55.0,
+            "latitude": 52.78,
+            "longitude": 55.76,
             "node": "Канчуринская",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 55.0,
+            "latitude": 53.36,
+            "longitude": 55.92,
             "node": "Салават",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 52.0,
-            "longitude": 55.0,
+            "latitude": 52.77,
+            "longitude": 55.78,
             "node": "Кумертау",
             "region": "Башкортостан",
             "type": "Город"
         },
         {
-            "latitude": 50.0,
-            "longitude": 41.0,
+            "latitude": 50.33,
+            "longitude": 41.09,
             "node": "Калач",
             "region": "Воронежская",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 38.0,
+            "latitude": 50.19,
+            "longitude": 38.18,
             "node": "Валуйки",
             "region": "Белгородская",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 36.0,
+            "latitude": 50.6,
+            "longitude": 36.6,
             "node": "Белгород",
             "region": "Белгородская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 37.0,
+            "latitude": 53.91,
+            "longitude": 37.34,
             "node": "Пришня",
             "region": "Тульская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 34.0,
+            "latitude": 53.25,
+            "longitude": 34.37,
             "node": "Брянск",
             "region": "Брянская",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 44.0,
+            "latitude": 54.67,
+            "longitude": 44.64,
             "node": "Починки",
             "region": "Нижегородская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 41.0,
+            "latitude": 56.18,
+            "longitude": 41.99,
             "node": "Вязниковская",
             "region": "Владимирская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 40.0,
+            "latitude": 56.13,
+            "longitude": 40.42,
             "node": "Владимир",
             "region": "Владимирская",
             "type": "Город"
         },
         {
-            "latitude": 49.0,
-            "longitude": 43.0,
+            "latitude": 49.65,
+            "longitude": 43.6,
             "node": "Фролово",
             "region": "Волгоградская",
             "type": "КС"
         },
         {
-            "latitude": 48.0,
-            "longitude": 44.0,
+            "latitude": 48.71,
+            "longitude": 44.51,
             "node": "C-з П Хлеборова",
             "region": "Волгоградская",
             "type": "Город"
         },
         {
-            "latitude": 48.0,
-            "longitude": 44.0,
+            "latitude": 48.7,
+            "longitude": 44.51,
             "node": "Волгоград",
             "region": "Волгоградская",
             "type": "Город"
         },
         {
-            "latitude": 50.0,
-            "longitude": 45.0,
+            "latitude": 50.08,
+            "longitude": 45.4,
             "node": "Камышин",
             "region": "Волгоградская",
             "type": "Город"
         },
         {
-            "latitude": 50.0,
-            "longitude": 44.0,
+            "latitude": 50.19,
+            "longitude": 44.29,
             "node": "Коробки",
             "region": "Волгоградская",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 40.0,
+            "latitude": 58.78,
+            "longitude": 40.24,
             "node": "Грязовец КС-17",
             "region": "Вологодская",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 38.0,
+            "latitude": 59.76,
+            "longitude": 38.26,
             "node": "Шексна КС-1",
             "region": "Вологодская",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 39.0,
+            "latitude": 59.22,
+            "longitude": 39.9,
             "node": "Вологда",
             "region": "Вологодская",
             "type": "Город"
         },
         {
-            "latitude": 59.0,
-            "longitude": 37.0,
+            "latitude": 59.13,
+            "longitude": 37.93,
             "node": "Череповец",
             "region": "Вологодская",
             "type": "Город"
         },
         {
-            "latitude": 61.0,
-            "longitude": 46.0,
+            "latitude": 61.08,
+            "longitude": 46.47,
             "node": "Приводино КС-14",
             "region": "Архангельская",
             "type": "КС"
         },
         {
-            "latitude": 60.0,
-            "longitude": 46.0,
+            "latitude": 60.76,
+            "longitude": 46.3,
             "node": "В Устюг",
             "region": "Вологодская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
+            "latitude": 53.19,
             "longitude": 40.0,
             "node": "Чаплыгин",
             "region": "Липецкая",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 38.0,
+            "latitude": 50.73,
+            "longitude": 38.98,
             "node": "Острогожск",
             "region": "Воронежская",
             "type": "КС"
         },
         {
-            "latitude": 51.0,
-            "longitude": 39.0,
+            "latitude": 51.67,
+            "longitude": 39.21,
             "node": "Воронеж",
             "region": "Воронежская",
             "type": "Город"
         },
         {
-            "latitude": 45.0,
-            "longitude": 41.0,
+            "latitude": 45.21,
+            "longitude": 41.77,
             "node": "Рождественская",
             "region": "Ставропольский край",
             "type": "КС"
         },
         {
-            "latitude": 42.0,
-            "longitude": 47.0,
+            "latitude": 42.99,
+            "longitude": 47.44,
             "node": "Кизил-Юрт KC",
             "region": "Дагестан",
             "type": "КС"
         },
         {
-            "latitude": 46.0,
-            "longitude": 47.0,
+            "latitude": 46.87,
+            "longitude": 47.52,
             "node": "Замьяны",
             "region": "Астраханская",
             "type": "КС"
         },
         {
-            "latitude": 43.0,
-            "longitude": 45.0,
+            "latitude": 43.5,
+            "longitude": 45.88,
             "node": "Червленная",
             "region": "Чеченская",
             "type": "КС"
         },
         {
-            "latitude": 43.0,
-            "longitude": 46.0,
+            "latitude": 43.2,
+            "longitude": 46.87,
             "node": "Кизил-Юрт",
             "region": "Дагестан",
             "type": "Город"
         },
         {
-            "latitude": 42.0,
-            "longitude": 47.0,
+            "latitude": 42.98,
+            "longitude": 47.5,
             "node": "Махачкалинское",
             "region": "Дагестан",
             "type": "Город"
         },
         {
-            "latitude": 42.0,
-            "longitude": 47.0,
+            "latitude": 42.98,
+            "longitude": 47.5,
             "node": "Махачкала",
             "region": "Дагестан",
             "type": "Город"
         },
         {
-            "latitude": 44.0,
-            "longitude": 46.0,
+            "latitude": 44.95,
+            "longitude": 46.67,
             "node": "Артезиан",
             "region": "Калмыкия",
             "type": "КС"
         },
         {
-            "latitude": 43.0,
-            "longitude": 46.0,
+            "latitude": 43.85,
+            "longitude": 46.71,
             "node": "Кизляр",
             "region": "Дагестан",
             "type": "Город"
         },
         {
-            "latitude": 42.0,
-            "longitude": 47.0,
+            "latitude": 42.57,
+            "longitude": 47.87,
             "node": "Избербаш",
             "region": "Дагестан",
             "type": "КС"
         },
         {
-            "latitude": 42.0,
-            "longitude": 48.0,
+            "latitude": 42.07,
+            "longitude": 48.3,
             "node": "Дербент",
             "region": "Дагестан",
             "type": "Город"
         },
         {
-            "latitude": 52.0,
-            "longitude": 45.0,
+            "latitude": 52.26,
+            "longitude": 45.42,
             "node": "Петровск",
             "region": "Саратовская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 44.0,
+            "latitude": 56.32,
+            "longitude": 44.07,
             "node": "Пильненская ",
             "region": "Нижегородская",
             "type": "КС"
         },
         {
             "latitude": 56.0,
-            "longitude": 45.0,
+            "longitude": 45.06,
             "node": "Лысково",
             "region": "Нижегородская",
             "type": "КС"
         },
         {
             "latitude": 57.0,
-            "longitude": 40.0,
+            "longitude": 40.98,
             "node": "Иваново",
             "region": "Ивановская",
             "type": "Город"
         },
         {
-            "latitude": 43.0,
-            "longitude": 44.0,
+            "latitude": 43.75,
+            "longitude": 44.66,
             "node": "Моздок",
             "region": "Алания",
             "type": "КС"
         },
         {
-            "latitude": 43.0,
-            "longitude": 44.0,
+            "latitude": 43.22,
+            "longitude": 44.77,
             "node": "Назрань",
             "region": "Ингушетия",
             "type": "Город"
         },
         {
-            "latitude": 44.0,
-            "longitude": 43.0,
+            "latitude": 44.1,
+            "longitude": 43.45,
             "node": "Георгиевская КС-8",
             "region": "Ставропольский край",
             "type": "КС"
         },
         {
-            "latitude": 43.0,
-            "longitude": 43.0,
+            "latitude": 43.48,
+            "longitude": 43.62,
             "node": "Нальчик",
             "region": "Кабардино-Балкарская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 27.0,
+            "latitude": 53.92,
+            "longitude": 27.55,
             "node": "Минск",
             "region": "Белоруссия",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 25.0,
+            "latitude": 54.68,
+            "longitude": 25.28,
             "node": "Вильнюс",
             "region": "Литва",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 20.0,
+            "latitude": 54.71,
+            "longitude": 20.51,
             "node": "Калининград",
             "region": "Калининградская",
             "type": "Город"
         },
         {
-            "latitude": 45.0,
-            "longitude": 44.0,
+            "latitude": 45.82,
+            "longitude": 44.64,
             "node": "Ики-Бурул",
             "region": "Калмыкия",
             "type": "Город"
         },
         {
-            "latitude": 45.0,
-            "longitude": 46.0,
+            "latitude": 45.4,
+            "longitude": 46.85,
             "node": "Улан-Хол",
             "region": "Калмыкия",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 36.0,
+            "latitude": 55.1,
+            "longitude": 36.7,
             "node": "Белоусово",
             "region": "Калужская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 36.0,
+            "latitude": 54.53,
+            "longitude": 36.27,
             "node": "Калуга",
             "region": "Калужская",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 35.0,
+            "latitude": 54.43,
+            "longitude": 35.43,
             "node": "Калужская",
             "region": "Калужская",
             "type": "КС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 41.0,
+            "latitude": 44.64,
+            "longitude": 41.94,
             "node": "Невинномысская КС-7",
             "region": "Ставропольский край",
             "type": "КС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 42.0,
+            "latitude": 44.22,
+            "longitude": 42.06,
             "node": "Черкесск",
             "region": "Карачаево-Черкесская",
             "type": "Город"
         },
         {
-            "latitude": 59.0,
-            "longitude": 42.0,
+            "latitude": 59.68,
+            "longitude": 42.03,
             "node": "Юбилейная КС-16",
             "region": "Вологодская",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 32.0,
+            "latitude": 59.78,
+            "longitude": 32.39,
             "node": "Волхов",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 34.0,
+            "latitude": 61.8,
+            "longitude": 34.35,
             "node": "Петрозаводск",
             "region": "Карелия",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 84.0,
+            "latitude": 55.84,
+            "longitude": 84.72,
             "node": "Проскоково",
             "region": "Кемеровская",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 85.0,
+            "latitude": 55.17,
+            "longitude": 85.37,
             "node": "Толки ",
             "region": "Кемеровская",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 86.0,
+            "latitude": 55.35,
+            "longitude": 86.09,
             "node": "Кемерово",
             "region": "Кемеровская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 87.0,
+            "latitude": 53.73,
+            "longitude": 87.08,
             "node": "Новокузнецк",
             "region": "Кемеровская",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 84.0,
+            "latitude": 55.71,
+            "longitude": 84.93,
             "node": "Юрга",
             "region": "Кемеровская",
             "type": "Город"
         },
         {
-            "latitude": 58.0,
-            "longitude": 49.0,
+            "latitude": 58.6,
+            "longitude": 49.65,
             "node": "Вятская",
             "region": "Кировская",
             "type": "Город"
         },
         {
-            "latitude": 58.0,
-            "longitude": 56.0,
+            "latitude": 58.03,
+            "longitude": 56.02,
             "node": "Оханская",
             "region": "Пермский край",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 49.0,
+            "latitude": 58.6,
+            "longitude": 49.65,
             "node": "Вятка",
             "region": "Кировская",
             "type": "Город"
         },
         {
-            "latitude": 63.0,
-            "longitude": 53.0,
+            "latitude": 63.66,
+            "longitude": 53.77,
             "node": "Ухта",
             "region": "Коми",
             "type": "КС"
         },
         {
-            "latitude": 62.0,
-            "longitude": 50.0,
+            "latitude": 62.33,
+            "longitude": 50.1,
             "node": "Микунь КС-12",
             "region": "Коми",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 50.0,
+            "latitude": 61.67,
+            "longitude": 50.82,
             "node": "Сыктывкар",
             "region": "Коми",
             "type": "Город"
         },
         {
-            "latitude": 63.0,
-            "longitude": 57.0,
+            "latitude": 63.68,
+            "longitude": 57.35,
             "node": "Вуктыл КС",
             "region": "Коми",
             "type": "КС"
         },
         {
-            "latitude": 65.0,
-            "longitude": 57.0,
+            "latitude": 65.13,
+            "longitude": 57.32,
             "node": "Печорская ГРЭС",
             "region": "Коми",
             "type": "ГРЭС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 39.0,
+            "latitude": 57.3,
+            "longitude": 39.85,
             "node": "Гаврилов Ям",
             "region": "Ярославская",
             "type": "КС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 41.0,
+            "latitude": 57.41,
+            "longitude": 41.18,
             "node": "Костромская ГРЭС",
             "region": "Костромская",
             "type": "ГРЭС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 40.0,
+            "latitude": 58.18,
+            "longitude": 40.18,
             "node": "Данилов",
             "region": "Ярославская",
             "type": "КС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 40.0,
+            "latitude": 57.77,
+            "longitude": 40.93,
             "node": "Кострома",
             "region": "Костромская",
             "type": "Город"
         },
         {
-            "latitude": 45.0,
-            "longitude": 39.0,
+            "latitude": 45.7,
+            "longitude": 39.58,
             "node": "Березанская ",
             "region": "Краснодарский край",
             "type": "КС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 38.0,
+            "latitude": 44.82,
+            "longitude": 38.84,
             "node": "Афипская",
             "region": "Краснодарский край",
             "type": "КС"
         },
         {
-            "latitude": 45.0,
-            "longitude": 40.0,
+            "latitude": 45.25,
+            "longitude": 40.06,
             "node": "Александровская",
             "region": "Краснодарский край",
             "type": "КС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 37.0,
+            "latitude": 44.72,
+            "longitude": 37.77,
             "node": "Новороссийск",
             "region": "Краснодарский край",
             "type": "Город"
         },
         {
-            "latitude": 44.0,
-            "longitude": 38.0,
+            "latitude": 44.56,
+            "longitude": 38.08,
             "node": "Геленджик",
             "region": "Краснодарский край",
             "type": "Город"
         },
         {
-            "latitude": 46.0,
-            "longitude": 39.0,
+            "latitude": 46.55,
+            "longitude": 39.67,
             "node": "Кущевская",
             "region": "Краснодарский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 45.0,
-            "longitude": 38.0,
+            "latitude": 45.03,
+            "longitude": 38.98,
             "node": "Краснодар",
             "region": "Краснодарский край",
             "type": "ПХГ"
         },
         {
-            "latitude": 44.0,
-            "longitude": 39.0,
+            "latitude": 44.1,
+            "longitude": 39.08,
             "node": "Туапсе",
             "region": "Краснодарский край",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 61.0,
+            "latitude": 55.34,
+            "longitude": 61.34,
             "node": "Долгодеревенская",
             "region": "Empty",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 64.0,
+            "latitude": 56.33,
+            "longitude": 64.32,
             "node": "Шатровская",
             "region": "Курганская",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 65.0,
+            "latitude": 55.44,
+            "longitude": 65.34,
             "node": "Курган",
             "region": "Курганская",
             "type": "Город"
         },
         {
-            "latitude": 52.0,
-            "longitude": 37.0,
+            "latitude": 52.06,
+            "longitude": 37.52,
             "node": "Долгое",
             "region": "Орловская",
             "type": "КС"
         },
         {
-            "latitude": 51.0,
-            "longitude": 36.0,
+            "latitude": 51.72,
+            "longitude": 36.18,
             "node": "Курск",
             "region": "Курская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 38.0,
+            "latitude": 53.15,
+            "longitude": 38.08,
             "node": "Ефремов",
             "region": "Тульская",
             "type": "КС"
         },
         {
-            "latitude": 52.0,
-            "longitude": 38.0,
+            "latitude": 52.79,
+            "longitude": 38.81,
             "node": "Донская",
             "region": "Липецкая",
             "type": "КС"
         },
         {
-            "latitude": -52.0,
-            "longitude": 39.0,
+            "latitude": 52.62,
+            "longitude": 39.6,
             "node": "Липецк",
             "region": "Липецкая",
             "type": "Город"
         },
         {
-            "latitude": -55.0,
-            "longitude": 48.0,
+            "latitude": 55.99,
+            "longitude": 48.6,
             "node": "Помарская",
             "region": "Марий - Эл",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 47.0,
+            "latitude": 56.63,
+            "longitude": 47.9,
             "node": "Юшкар-Ола",
             "region": "Марий - Эл",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 45.0,
+            "latitude": 54.18,
+            "longitude": 45.18,
             "node": "Cаранск",
             "region": "Мордовия",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 37.0,
+            "latitude": 54.92,
+            "longitude": 37.4,
             "node": "Серпухов",
             "region": "Москва",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 38.0,
+            "latitude": 55.32,
+            "longitude": 38.68,
             "node": "Воскресенск",
             "region": "Москва",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 37.0,
+            "latitude": 56.28,
+            "longitude": 37.48,
             "node": "Яхрома",
             "region": "Москва",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 37.0,
+            "latitude": 55.76,
+            "longitude": 37.62,
             "node": "Москва",
             "region": "Москва",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 37.0,
+            "latitude": 55.63,
+            "longitude": 37.74,
             "node": "Московская",
             "region": "Московская",
             "type": "КС"
         },
         {
             "latitude": 49.0,
-            "longitude": 37.0,
+            "longitude": 37.58,
             "node": "Святогорск",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "КС"
         },
         {
-            "latitude": 60.0,
-            "longitude": 30.0,
+            "latitude": 60.13,
+            "longitude": 30.34,
             "node": "Северная",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "КС"
         },
         {
-            "latitude": 60.0,
-            "longitude": 28.0,
+            "latitude": 60.71,
+            "longitude": 28.76,
             "node": "Выборг",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "Город"
         },
         {
-            "latitude": 60.0,
-            "longitude": 30.0,
+            "latitude": 60.09,
+            "longitude": 30.39,
             "node": "ГРС Северная",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 31.0,
+            "latitude": 58.53,
+            "longitude": 31.28,
             "node": "Новгород",
             "region": "Новгородская",
             "type": "Город"
         },
         {
-            "latitude": 59.0,
-            "longitude": 30.0,
+            "latitude": 59.81,
+            "longitude": 30.33,
             "node": "ГРС Шоосейная",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 30.0,
+            "latitude": 59.93,
+            "longitude": 30.52,
             "node": "ГРС Восточная",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 30.0,
+            "latitude": 59.5,
+            "longitude": 30.13,
             "node": "Гатчина",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "ПХГ"
         },
         {
-            "latitude": 59.0,
-            "longitude": 28.0,
+            "latitude": 59.12,
+            "longitude": 28.08,
             "node": "Сланцы",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "Город"
         },
         {
-            "latitude": 59.0,
-            "longitude": 30.0,
+            "latitude": 59.95,
+            "longitude": 30.32,
             "node": "Санкт-Петербург ",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "Город"
         },
         {
-            "latitude": 56.0,
+            "latitude": 56.33,
             "longitude": 44.0,
             "node": "Нижний Новгород",
             "region": "Нижегородская",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 32.0,
+            "latitude": 58.33,
+            "longitude": 32.32,
             "node": "Невская",
             "region": "Новгородская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 60.0,
+            "latitude": 56.75,
+            "longitude": 60.58,
             "node": "ГРС-3",
             "region": "Новосибирская",
             "type": "ГРС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 59.0,
+            "latitude": 53.48,
+            "longitude": 59.08,
             "node": "ГРС-4",
             "region": "Новосибирская",
             "type": "ГРС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 82.0,
+            "latitude": 55.04,
+            "longitude": 82.92,
             "node": "Новосибирск",
             "region": "Новосибирская",
             "type": "Город"
         },
         {
-            "latitude": 56.0,
-            "longitude": 69.0,
+            "latitude": 56.32,
+            "longitude": 69.01,
             "node": "Карасульская",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 65.0,
+            "latitude": 56.86,
+            "longitude": 65.92,
             "node": "Богадинская КС-11",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 73.0,
+            "latitude": 54.99,
+            "longitude": 73.37,
             "node": "Омск",
             "region": "Омская",
             "type": "Город"
         },
         {
-            "latitude": 51.0,
-            "longitude": 57.0,
+            "latitude": 51.42,
+            "longitude": 57.6,
             "node": "Медногорская",
             "region": "Оренбургская",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 59.0,
+            "latitude": 50.86,
+            "longitude": 59.32,
             "node": "Домбаровская КС-15",
             "region": "Оренбургская",
             "type": "КС"
         },
         {
-            "latitude": 51.0,
-            "longitude": 58.0,
+            "latitude": 51.23,
+            "longitude": 58.48,
             "node": "Орск",
             "region": "Оренбургская",
             "type": "Город"
         },
         {
-            "latitude": 51.0,
-            "longitude": 57.0,
+            "latitude": 51.4,
+            "longitude": 57.58,
             "node": "Медногорск",
             "region": "Оренбургская",
             "type": "Город"
         },
         {
-            "latitude": 51.0,
-            "longitude": 59.0,
+            "latitude": 51.92,
+            "longitude": 59.92,
             "node": "Теренсай КС-16",
             "region": "Оренбургская",
             "type": "КС"
         },
         {
-            "latitude": 51.0,
-            "longitude": 58.0,
+            "latitude": 51.75,
+            "longitude": 58.8,
             "node": "Ириклинская ГРС ",
             "region": "Оренбургская",
             "type": "ГРС "
         },
         {
-            "latitude": 51.0,
-            "longitude": 56.0,
+            "latitude": 51.73,
+            "longitude": 56.29,
             "node": "Саракташ",
             "region": "Оренбургская",
             "type": "Город"
         },
         {
-            "latitude": 51.0,
-            "longitude": 54.0,
+            "latitude": 51.87,
+            "longitude": 54.73,
             "node": "Оренбург КС",
             "region": "Оренбургская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 36.0,
+            "latitude": 53.28,
+            "longitude": 36.58,
             "node": "Мценск",
             "region": "Орловская",
             "type": "Город"
         },
         {
-            "latitude": 52.0,
-            "longitude": 36.0,
+            "latitude": 52.97,
+            "longitude": 36.08,
             "node": "Орел",
             "region": "Орловская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 44.0,
+            "latitude": 53.87,
+            "longitude": 44.86,
             "node": "Исса",
             "region": "Пензенская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 45.0,
+            "latitude": 53.2,
+            "longitude": 45.02,
             "node": "Пенза",
             "region": "Пензенская",
             "type": "Город"
         },
         {
-            "latitude": 58.0,
-            "longitude": 56.0,
+            "latitude": 58.45,
+            "longitude": 56.42,
             "node": "Добрянская",
             "region": "Пермский край",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 56.0,
+            "latitude": 58.46,
+            "longitude": 56.41,
             "node": "ГРС Добрянка",
             "region": "Пермский край",
             "type": "ГРС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 56.0,
+            "latitude": 58.5,
+            "longitude": 56.34,
             "node": "Пермская ГРЭС",
             "region": "Пермский край",
             "type": "Месторождение"
         },
         {
-            "latitude": 57.0,
-            "longitude": 33.0,
+            "latitude": 57.98,
+            "longitude": 33.25,
             "node": "Валдай",
             "region": "Новгородская",
             "type": "КС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 29.0,
+            "latitude": 57.51,
+            "longitude": 29.97,
             "node": "Псковская ГРЭС",
             "region": "Псковская",
             "type": "ГРЭС"
         },
         {
-            "latitude": -56.0,
-            "longitude": 30.0,
+            "latitude": 56.35,
+            "longitude": 30.52,
             "node": "Великие Луки",
             "region": "Псковская",
             "type": "Город"
         },
         {
-            "latitude": 57.0,
-            "longitude": 28.0,
+            "latitude": 57.82,
+            "longitude": 28.33,
             "node": "Псков",
             "region": "Псковская",
             "type": "Город"
         },
         {
-            "latitude": 45.0,
-            "longitude": 41.0,
+            "latitude": 45.33,
+            "longitude": 41.78,
             "node": "Изобильное КС-6",
             "region": "Ставропольский край",
             "type": "КС"
         },
         {
-            "latitude": 45.0,
-            "longitude": 41.0,
+            "latitude": 45.92,
+            "longitude": 41.31,
             "node": "Привольное КС-6",
             "region": "Ставропольский край",
             "type": "КС"
         },
         {
-            "latitude": 46.0,
-            "longitude": 40.0,
+            "latitude": 46.55,
+            "longitude": 40.65,
             "node": "Егорлык",
             "region": "Ростовская",
             "type": "КС"
         },
         {
-            "latitude": 47.0,
-            "longitude": 39.0,
+            "latitude": 47.22,
+            "longitude": 39.72,
             "node": "Ростов",
             "region": "Ростовская",
             "type": "Город"
         },
         {
-            "latitude": 48.0,
-            "longitude": 40.0,
+            "latitude": 48.17,
+            "longitude": 40.79,
             "node": "Б. Калитва",
             "region": "Ростовская",
             "type": "Город"
         },
         {
-            "latitude": 48.0,
-            "longitude": 40.0,
+            "latitude": 48.32,
+            "longitude": 40.27,
             "node": "К. Шахтинский",
             "region": "Ростовская",
             "type": "КС"
         },
         {
-            "latitude": 49.0,
-            "longitude": 40.0,
+            "latitude": 49.52,
+            "longitude": 40.51,
             "node": "Сохрановка",
             "region": "Ростовская",
             "type": "КС"
         },
         {
-            "latitude": 47.0,
-            "longitude": 40.0,
+            "latitude": 47.42,
+            "longitude": 40.11,
             "node": "Октябрьская",
             "region": "Ростовская",
             "type": "КС"
         },
         {
-            "latitude": 47.0,
-            "longitude": 38.0,
+            "latitude": 47.24,
+            "longitude": 38.88,
             "node": "Таганрог",
             "region": "Ростовская",
             "type": "Город"
         },
         {
-            "latitude": 47.0,
-            "longitude": 40.0,
+            "latitude": 47.42,
+            "longitude": 40.09,
             "node": "Новочеркасская ГРЭС",
             "region": "Ростовская",
             "type": "ГРЭС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 41.0,
+            "latitude": 54.08,
+            "longitude": 41.12,
             "node": "Путятинская",
             "region": "Рязанская",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 42.0,
+            "latitude": 55.57,
+            "longitude": 42.05,
             "node": "Муром",
             "region": "Владимирская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 40.0,
+            "latitude": 54.29,
+            "longitude": 40.15,
             "node": "Истье",
             "region": "Рязанская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 39.0,
+            "latitude": 54.62,
+            "longitude": 39.72,
             "node": "Рязань",
             "region": "Рязанская",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 39.0,
+            "latitude": 54.04,
+            "longitude": 39.78,
             "node": "Рязанская ГРЭС",
             "region": "Рязанская",
             "type": "ГРЭС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 52.0,
+            "latitude": 53.65,
+            "longitude": 52.13,
             "node": "Похвистнево",
             "region": "Самарская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 51.0,
+            "latitude": 53.85,
+            "longitude": 51.17,
             "node": "Сергиевская КС-8",
             "region": "Самарская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 50.0,
+            "latitude": 53.19,
+            "longitude": 50.11,
             "node": "Красноармейская",
             "region": "Саратовская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 50.0,
+            "latitude": 53.2,
+            "longitude": 50.16,
             "node": "Самара",
             "region": "Самарская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 49.0,
+            "latitude": 53.52,
+            "longitude": 49.42,
             "node": "Тольятти",
             "region": "Самарская",
             "type": "Город"
         },
         {
-            "latitude": 51.0,
+            "latitude": 51.53,
             "longitude": 46.0,
             "node": "Саратов",
             "region": "Саратовская",
             "type": "ПХГ"
         },
         {
-            "latitude": 51.0,
-            "longitude": 47.0,
+            "latitude": 51.26,
+            "longitude": 47.55,
             "node": "Мокроус",
             "region": "Саратовская",
             "type": "Город"
         },
         {
-            "latitude": 51.0,
-            "longitude": 46.0,
+            "latitude": 51.85,
+            "longitude": 46.44,
             "node": "Приволжская",
             "region": "Empty",
             "type": "КС"
         },
         {
-            "latitude": 51.0,
-            "longitude": 46.0,
+            "latitude": 51.38,
+            "longitude": 46.85,
             "node": "ПХГ Степное",
             "region": "Empty",
             "type": "ПХГ"
         },
         {
-            "latitude": -51.0,
-            "longitude": 45.0,
+            "latitude": 51.65,
+            "longitude": 45.81,
             "node": "Сторожевка",
             "region": "Саратовская",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 59.0,
+            "latitude": 58.62,
+            "longitude": 59.85,
             "node": "Н. Тура",
             "region": "Свердловская(Ю)",
             "type": "КС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 59.0,
+            "latitude": 57.92,
+            "longitude": 59.97,
             "node": "Н.Тагил",
             "region": "Свердловская(Е)",
             "type": "Город"
         },
         {
-            "latitude": 56.0,
-            "longitude": 60.0,
+            "latitude": 56.84,
+            "longitude": 60.58,
             "node": "Екатеринбург",
             "region": "Свердловская(Е)",
             "type": "Город"
         },
         {
-            "latitude": 43.0,
-            "longitude": 44.0,
+            "latitude": 43.02,
+            "longitude": 44.68,
             "node": "Владикавказ",
             "region": "Алания",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 31.0,
+            "latitude": 54.88,
+            "longitude": 31.96,
             "node": "Смоленская",
             "region": "Смоленская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 32.0,
+            "latitude": 54.78,
+            "longitude": 32.05,
             "node": "Смоленск",
             "region": "Смоленская",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 33.0,
+            "latitude": 54.92,
+            "longitude": 33.31,
             "node": "Дорогобуж",
             "region": "Смоленская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 32.0,
+            "latitude": 53.95,
+            "longitude": 32.86,
             "node": "Рославль",
             "region": "Смоленская",
             "type": "Город"
         },
         {
-            "latitude": 44.0,
-            "longitude": 41.0,
+            "latitude": 44.64,
+            "longitude": 41.94,
             "node": "Невинномысская ГРЭС",
             "region": "Ставропольский край",
             "type": "ГРЭС"
         },
         {
-            "latitude": 43.0,
-            "longitude": 42.0,
+            "latitude": 43.54,
+            "longitude": 42.43,
             "node": "Мин. Воды, Кисловодск",
             "region": "Ставропольский край",
             "type": "Город"
         },
         {
-            "latitude": 45.0,
-            "longitude": 41.0,
+            "latitude": 45.31,
+            "longitude": 41.51,
             "node": "Ставропольская ГРЭС",
             "region": "Ставропольский край",
             "type": "ГРЭС"
         },
         {
-            "latitude": 45.0,
-            "longitude": 41.0,
+            "latitude": 45.31,
+            "longitude": 41.51,
             "node": "Ставропольская",
             "region": "Ставропольский край",
             "type": "ГРЭС"
         },
         {
-            "latitude": 53.0,
+            "latitude": 53.24,
             "longitude": 43.0,
             "node": "Башмаково",
             "region": "Пензенская",
             "type": "КС"
         },
         {
-            "latitude": 52.0,
-            "longitude": 44.0,
+            "latitude": 52.7,
+            "longitude": 44.15,
             "node": "Мещерская",
             "region": "Пензенская",
             "type": "КС"
         },
         {
-            "latitude": 52.0,
-            "longitude": 41.0,
+            "latitude": 52.72,
+            "longitude": 41.43,
             "node": "Тамбов",
             "region": "Тамбовская",
             "type": "Город"
         },
         {
-            "latitude": 56.0,
-            "longitude": 50.0,
+            "latitude": 56.18,
+            "longitude": 50.55,
             "node": "Шемордан",
             "region": "Татарстан",
             "type": "КС"
         },
         {
-            "latitude": 55.0,
-            "longitude": 51.0,
+            "latitude": 55.63,
+            "longitude": 51.82,
             "node": "Нижнекамск",
             "region": "Татарстан",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 49.0,
+            "latitude": 55.78,
+            "longitude": 49.1,
             "node": "Казань",
             "region": "Татарстан",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 52.0,
+            "latitude": 55.3,
+            "longitude": 52.02,
             "node": "Заинск",
             "region": "Татарстан",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 52.0,
+            "latitude": 54.81,
+            "longitude": 52.22,
             "node": "Минибаевский ГПЗ",
             "region": "Empty",
             "type": "ГПЗ"
         },
         {
-            "latitude": 56.0,
-            "longitude": 36.0,
+            "latitude": 56.74,
+            "longitude": 36.77,
             "node": "Конаковская ГРЭС",
             "region": "Тверская",
             "type": "ГРЭС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 35.0,
+            "latitude": 56.86,
+            "longitude": 35.91,
             "node": "Тверь",
             "region": "Тверская",
             "type": "Город"
         },
         {
-            "latitude": 62.0,
-            "longitude": 77.0,
+            "latitude": 62.08,
+            "longitude": 77.57,
             "node": "Варьеганское",
             "region": "Empty",
             "type": "Месторождение"
         },
         {
-            "latitude": 60.0,
-            "longitude": 76.0,
+            "latitude": 60.99,
+            "longitude": 76.37,
             "node": "Нижневартовский КС",
             "region": "Empty",
             "type": "ГПЗ"
         },
         {
-            "latitude": 57.0,
-            "longitude": 83.0,
+            "latitude": 57.09,
+            "longitude": 83.97,
             "node": "Володино",
             "region": "Томская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 84.0,
+            "latitude": 56.49,
+            "longitude": 84.95,
             "node": "Томск",
             "region": "Томская",
             "type": "Город"
         },
         {
-            "latitude": 61.0,
-            "longitude": 77.0,
+            "latitude": 61.26,
+            "longitude": 77.05,
             "node": "Белозерский ГПЗ и КС",
             "region": "Empty",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 37.0,
+            "latitude": 54.2,
+            "longitude": 37.62,
             "node": "Тула",
             "region": "Тульская",
             "type": "Город"
         },
         {
-            "latitude": 57.0,
-            "longitude": 67.0,
+            "latitude": 57.24,
+            "longitude": 67.05,
             "node": "Ярковская КС-10",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 65.0,
+            "latitude": 56.53,
+            "longitude": 65.53,
             "node": "Богандинская КС-11",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 65.0,
+            "latitude": 57.15,
+            "longitude": 65.53,
             "node": "Тюмень",
             "region": "Тюменская",
             "type": "Город"
         },
         {
-            "latitude": 58.0,
-            "longitude": 68.0,
+            "latitude": 58.41,
+            "longitude": 68.61,
             "node": "Тобольская КС-9",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 59.0,
-            "longitude": 69.0,
+            "latitude": 59.07,
+            "longitude": 69.48,
             "node": "Туртасская КС-8",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 68.0,
+            "latitude": 58.2,
+            "longitude": 68.26,
             "node": "Тобольск",
             "region": "Тюменская",
             "type": "Город"
         },
         {
-            "latitude": 59.0,
-            "longitude": 70.0,
+            "latitude": 59.75,
+            "longitude": 70.5,
             "node": "Демьянская КС-7",
             "region": "Тюменская",
             "type": "КС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 69.0,
+            "latitude": 57.26,
+            "longitude": 69.05,
             "node": "ГРС Комсомольская",
             "region": "Тюменская",
             "type": "ГРС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 55.0,
+            "latitude": 58.04,
+            "longitude": 55.83,
             "node": "Воткинская",
             "region": "Удмуртская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 53.0,
+            "latitude": 56.85,
+            "longitude": 53.22,
             "node": "Ижевск",
             "region": "Удмуртская",
             "type": "Город"
         },
         {
-            "latitude": 53.0,
-            "longitude": 46.0,
+            "latitude": 53.6,
+            "longitude": 46.77,
             "node": "Павловка КС-11",
             "region": "Ульяновская",
             "type": "КС"
         },
         {
-            "latitude": 53.0,
-            "longitude": 48.0,
+            "latitude": 53.29,
+            "longitude": 48.36,
             "node": "Сызрань КС-10",
             "region": "Самарская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 48.0,
+            "latitude": 54.32,
+            "longitude": 48.4,
             "node": "Ульяновск",
             "region": "Ульяновская",
             "type": "Город"
         },
         {
-            "latitude": 60.0,
-            "longitude": 73.0,
+            "latitude": 60.75,
+            "longitude": 73.97,
             "node": "Приобская КС-4",
             "region": "Empty",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 74.0,
+            "latitude": 61.48,
+            "longitude": 74.9,
             "node": "Аганская КС",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 73.0,
+            "latitude": 61.25,
+            "longitude": 73.43,
             "node": "Сургут",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "Город"
         },
         {
-            "latitude": 54.0,
-            "longitude": 61.0,
+            "latitude": 54.6,
+            "longitude": 61.17,
             "node": "Красногорск КС-19",
             "region": "Челябинская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 58.0,
+            "latitude": 54.75,
+            "longitude": 58.2,
             "node": "Катав-Ивановск",
             "region": "Челябинская",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 59.0,
+            "latitude": 55.17,
+            "longitude": 59.67,
             "node": "Златоуст",
             "region": "Челябинская",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 61.0,
+            "latitude": 55.16,
+            "longitude": 61.4,
             "node": "Челябинск",
             "region": "Челябинская",
             "type": "Город"
         },
         {
-            "latitude": 43.0,
-            "longitude": 45.0,
+            "latitude": 43.32,
+            "longitude": 45.69,
             "node": "Грозный",
             "region": "Чеченская",
             "type": "Город"
         },
         {
-            "latitude": 43.0,
-            "longitude": 46.0,
+            "latitude": 43.36,
+            "longitude": 46.1,
             "node": "Гудермес",
             "region": "Чеченская",
             "type": "Город"
         },
         {
-            "latitude": 55.0,
-            "longitude": 47.0,
+            "latitude": 55.98,
+            "longitude": 47.32,
             "node": "Чебоксарская",
             "region": "Чувашская",
             "type": "КС"
         },
         {
-            "latitude": 56.0,
-            "longitude": 47.0,
+            "latitude": 56.12,
+            "longitude": 47.23,
             "node": "Чебоксары",
             "region": "Чувашская",
             "type": "Город"
         },
         {
-            "latitude": 62.0,
-            "longitude": 64.0,
+            "latitude": 62.77,
+            "longitude": 64.32,
             "node": "Пунга",
             "region": "Ханты-Мансийский Автономный Округ",
             "type": "КС"
         },
         {
-            "latitude": 63.0,
-            "longitude": 64.0,
+            "latitude": 63.18,
+            "longitude": 64.42,
             "node": "Игрим",
             "region": "Ямало-Ненецкий автономный округ",
             "type": "Город"
         },
         {
-            "latitude": 57.0,
-            "longitude": 39.0,
+            "latitude": 57.62,
+            "longitude": 39.85,
             "node": "Ярославль",
             "region": "Ярославская",
             "type": "Город"
         },
         {
-            "latitude": 57.0,
-            "longitude": 38.0,
+            "latitude": 57.83,
+            "longitude": 38.45,
             "node": "Мышкино КС-18",
             "region": "Ярославская",
             "type": "КС"
         },
         {
-            "latitude": 58.0,
-            "longitude": 38.0,
+            "latitude": 58.05,
+            "longitude": 38.83,
             "node": "Рыбинск",
             "region": "Ярославская",
             "type": "Город"
         },
         {
-            "latitude": 57.0,
-            "longitude": 27.0,
+            "latitude": 57.7,
+            "longitude": 27.79,
             "node": "Изборск",
             "region": "Псковская",
             "type": "КС"
         },
         {
-            "latitude": 61.0,
-            "longitude": 28.0,
+            "latitude": 61.19,
+            "longitude": 28.78,
             "node": "ГИС Иматра (Россия/Финляндия)",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "ГИС"
         },
         {
-            "latitude": 57.0,
-            "longitude": 27.0,
+            "latitude": 57.7,
+            "longitude": 27.79,
             "node": "ГИС Изборск (Россия/Латвия+Эстония)",
             "region": "Псковская",
             "type": "КС"
         },
         {
-            "latitude": 54.0,
-            "longitude": 32.0,
+            "latitude": 54.78,
+            "longitude": 32.05,
             "node": "ГИС Смоленск (Россия/Белоруссия)",
             "region": "Смоленская",
             "type": "ГИС"
         },
         {
-            "latitude": 51.0,
-            "longitude": 35.0,
+            "latitude": 51.19,
+            "longitude": 35.27,
             "node": "ГИС Суджа (Россия/Украина)",
             "region": "Курская",
             "type": "ГИС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 38.0,
+            "latitude": 50.19,
+            "longitude": 38.18,
             "node": "ГИС Валуйки (Россия/Украина)",
             "region": "Белгородская",
             "type": "КС"
         },
         {
-            "latitude": 50.0,
-            "longitude": 37.0,
+            "latitude": 50.68,
+            "longitude": 37.92,
             "node": "ГИС Серебрянка (Россия/Украина)",
             "region": "Empty",
             "type": "ГИС"
         },
         {
-            "latitude": 49.0,
-            "longitude": 40.0,
+            "latitude": 49.88,
+            "longitude": 40.18,
             "node": "ГИС Писаревка (Россия/Украина)",
             "region": "Воронежская",
             "type": "ГИС"
         },
         {
-            "latitude": 49.0,
-            "longitude": 40.0,
+            "latitude": 49.52,
+            "longitude": 40.51,
             "node": "ГИС Сохрановка (Россия/Украина)",
             "region": "Ростовская",
             "type": "КС"
         },
         {
-            "latitude": 48.0,
-            "longitude": 39.0,
+            "latitude": 48.03,
+            "longitude": 39.54,
             "node": "ГИС Платово (Россия/Украина)",
             "region": "Ростовская",
             "type": "ГИС"
         },
         {
-            "latitude": 44.0,
-            "longitude": 38.0,
+            "latitude": 44.42,
+            "longitude": 38.36,
             "node": "ГИС Береговая (Россия/Турция)",
             "region": "Краснодарский край",
             "type": "ГИС"
         },
         {
-            "latitude": 41.0,
-            "longitude": 48.0,
+            "latitude": 41.72,
+            "longitude": 48.46,
             "node": "ГИС Ново-Филя (Россия/Азербайджан)",
             "region": "Дагестан",
             "type": "ГИС"
         },
         {
-            "latitude": 42.0,
-            "longitude": 44.0,
+            "latitude": 42.85,
+            "longitude": 44.64,
             "node": "ГИС ЧМИ (Россия/Грузия)",
             "region": "Empty",
             "type": "ГИС"
         },
         {
-            "latitude": 60.0,
-            "longitude": 28.0,
+            "latitude": 60.71,
+            "longitude": 28.74,
             "node": "ГИС Выборг (Россия/Германия)",
             "region": "Ленинградская + Санкт-Петербург",
             "type": "ГИС"
