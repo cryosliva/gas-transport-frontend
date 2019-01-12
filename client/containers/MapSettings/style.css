@@ -1,0 +1,28 @@
+.settings {
+    position: absolute;
+    z-index: 1000;
+}
+
+.root {
+    padding: 10px;
+    background-color: #E5E7E6;
+    border-radius: 10px;
+    top: 60px;
+    right: 25px;
+}
+
+.icon {
+    top: 10px;
+    right: 25px;
+
+    background: url('../../images/map-settings.png') no-repeat #E5E7E6;
+    background-position: center;
+    background-size: 30px 30px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
