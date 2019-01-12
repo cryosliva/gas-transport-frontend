@@ -1,0 +1,17 @@
+.root {
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    padding: 15px;
+
+    border-radius: 2px;
+
+    font-size: 16px;
+}
+
+.active {
+    background-color: #746BDE;
+    color: #fff;
+    font-weight: bold;
+}
