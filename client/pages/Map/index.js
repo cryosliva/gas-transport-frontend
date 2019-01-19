@@ -1,12 +1,14 @@
 /* @flow */
 
 import React from 'react';
-import {Map as LeafletMap, TileLayer, Marker, Popup, Polyline} from 'react-leaflet';
+import {Map as LeafletMap, TileLayer, Marker, Popup, Polyline, Tooltip} from 'react-leaflet';
 import L from 'leaflet';
 
 import icon from '../../images/marker.png';
 
-import {nodes} from './nodes.json';
+import {nodes} from '../../files/map/nodes.json';
+import {tubes} from '../../files/map/tubes.json';
+
 import css from './style.css';
 //
 // type State = {
@@ -27,17 +29,13 @@ const myIcon = new L.Icon({
     popupAnchor: [0, -28]
 });
 
-const prepareNodes = nodes =>
-    nodes.map(({latitude, longitude, node}) =>
-        ({node, latitude: parseInt(latitude), longitude: parseInt(longitude)}));
-
 const Map = () => {
     const lat = 65.751244;
     const lng = 85.618423;
     const zoom = 4;
     const position = [lat, lng];
-    const coordinates = prepareNodes(nodes);
     const showMarkers = false;
+    const showTubes = true;
 
     return (
         <div>
@@ -47,7 +45,7 @@ const Map = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               {
-                  showMarkers && coordinates.map(({latitude, longitude, node}) => (
+                  showMarkers && nodes.map(({latitude, longitude, node}) => (
                       <Marker position={[latitude, longitude]} icon={myIcon}>
                         <Popup>
                           {node}
@@ -55,7 +53,15 @@ const Map = () => {
                       </Marker>
                   ))
               }
-              <Polyline color="lime" positions={multiPolyline} />
+              {
+                  showTubes && tubes.map(({capacity, destination, source}) => (
+                      <Polyline
+                        color="blue"
+                        positions={[[source.latitude, source.longitude], [destination.latitude, destination.longitude]]}
+                        onClick={() => alert('clicked ' + polyline.id)}
+                    />
+                  ))
+              }
             </LeafletMap>
         </div>
     );

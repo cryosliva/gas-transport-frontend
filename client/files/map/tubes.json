@@ -2177,23 +2177,6 @@
             }
         },
         {
-            "capacity": NaN,
-            "destination": {
-                "latitude": 56.0,
-                "longitude": 41.0,
-                "node": "Вязниковская",
-                "region": "Владимирская",
-                "type": "КС"
-            },
-            "source": {
-                "latitude": 56.0,
-                "longitude": 41.0,
-                "node": "Вязниковская",
-                "region": "Владимирская",
-                "type": "КС"
-            }
-        },
-        {
             "capacity": 10.0,
             "destination": {
                 "latitude": 56.0,
