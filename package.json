@@ -7,7 +7,9 @@
     "start": "cd server && node server.js",
     "server": "cd server && nodemon server.js",
     "client": "./node_modules/.bin/webpack-dev-server --config ./client/webpack.dev.config.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "./node_modules/.bin/webpack --config ./client/webpack.dev.config.js --mode none",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
