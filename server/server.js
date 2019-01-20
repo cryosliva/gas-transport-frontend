@@ -1,5 +1,7 @@
 const express = require('express');
 
+const port = process.env.PORT || 5000;
+
 const app = express();
 
 app.get('/api/profile', (req, res) => {
@@ -7,7 +9,5 @@ app.get('/api/profile', (req, res) => {
 
     res.json(user);
 });
-
-const port = 5000;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
