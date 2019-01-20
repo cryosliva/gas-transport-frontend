@@ -1,13 +1,12 @@
 const express = require('express');
+const path = require('path');
 
 const port = process.env.PORT || 5000;
 
 const app = express();
 
-app.get('/*', function(req, res) {
-    const user = {};
-
-    res.json(user);
-})
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
