@@ -1,19 +1,25 @@
 import {createStore, combineReducers} from 'redux';
 
-const reducer = combineReducers({});
+import mapReducers from './containers/MapSettings/reducers';
 
-const getInitialState = () => ({
-    user: {
-        login: 'katretyakova',
-    },
+const reducer = combineReducers({
+    map: mapReducers,
 });
 
-const store = createStore(
-    reducer,
-    ...getInitialState(),
-    {
-        user: Promise.resolve(),
+const initialState = {
+    map: {
+        settings: {
+            showNodes: true,
+            showTubes: true,
+            zoom: 4.2,
+        },
     },
+};
+
+const store = createStore(
+    mapReducers,
+    initialState,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
 
 export default store;
