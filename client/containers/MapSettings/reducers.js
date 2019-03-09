@@ -9,15 +9,17 @@ import {
 } from './actions';
 
 export type State = {
-    showNodes: boolean,
-    showTubes: boolean,
+    settings: {
+        showNodes: boolean,
+        showTubes: boolean,
+    },
 };
 
 export default handleActions(({
     [TOGGLE_NODES]: state => {
-        state.map.settings.showNodes = !state.map.settings.showNodes;
+        state.settings.showNodes = !state.settings.showNodes;
     },
     [TOGGLE_TUBES]: state => {
-        state.map.settings.showTubes = !state.map.settings.showTubes;
+        state.settings.showTubes = !state.settings.showTubes;
     },
 }: Handlers<State, Actions>));

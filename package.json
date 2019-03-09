@@ -22,19 +22,24 @@
   },
   "homepage": "https://github.com/cryosliva/gas-transport-frontend#readme",
   "dependencies": {
+    "basic-auth-token": "^0.4.2",
+    "body-parser": "^1.18.3",
     "classnames": "^2.2.6",
     "concurrently": "^3.5.1",
     "express": "^4.16.3",
     "leaflet": "^1.4.0",
+    "node-fetch": "^2.3.0",
     "path": "^0.12.7",
     "ramda": "^0.26.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-inlinesvg": "^0.8.3",
     "react-leaflet": "^2.1.4",
+    "react-md-spinner": "^0.3.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "react-spinners": "^0.5.3",
     "recompose": "^0.28.2",
     "redux": "^4.0.0",
     "redux-observable": "^1.0.0",
@@ -70,14 +75,15 @@
     "webpack-cli": "^3.0.3"
   },
   "babel": {
-    "presets": [
-      "es2015",
-      "react",
-      "stage-0"
-    ],
-    "plugins": [
-      "transform-object-rest-spread",
-      "transform-flow-strip-types"
-    ]
-  }
+      "presets": [
+          "es2015",
+          "react",
+          "stage-0"
+        ],
+        "plugins": [
+          "transform-object-rest-spread",
+          "transform-flow-strip-types"
+        ]
+    },
+    "proxy": "http://localhost:5000"
 }
