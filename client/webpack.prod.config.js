@@ -14,39 +14,19 @@ const getThreadLoader = name => ({
 });
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: path.resolve(root, 'client', 'index.js'),
     module: {
         rules: [
           {
             test: /\.(js|jsx)$/,
             exclude: /node_modules/,
-              use: [
-                  {
-                      loader: 'cache-loader',
-                      options: {
-                          cacheDirectory: path.resolve(cacheDir, 'js')
-                      }
-                  },
-                  getThreadLoader('js'),
-                  {
-                      loader: 'babel-loader',
-                      options: {
-                          cacheDirectory: path.resolve(cacheDir, 'babel')
-                      }
-                  }
-              ]
+              use: ['thread-loader', 'babel-loader']
           },
           {
             test:  /\.css$/,
               use: [
-                  {
-                      loader: 'cache-loader',
-                      options: {
-                          cacheDirectory: path.resolve(cacheDir, 'css'),
-                      }
-                  },
-                  getThreadLoader('css'),
+                  'thread-loader',
                   {
                       loader: 'style-loader'
                   },
