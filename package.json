@@ -8,7 +8,8 @@
     "server": "cd server && nodemon server.js",
     "client": "./node_modules/.bin/webpack-dev-server --config ./client/webpack.dev.config.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "./node_modules/.bin/webpack --config ./client/webpack.dev.config.js --mode none",
+    "serve": "./node_modules/.bin/webpack --config ./client/webpack.dev.config.js",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack --config ./client/webpack.prod.config.js",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
@@ -59,6 +60,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
+    "cache-loader": "^2.0.1",
     "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
@@ -72,18 +74,19 @@
     "nodemon": "^1.17.5",
     "style-loader": "^0.21.0",
     "svg-inline-loader": "^0.8.0",
+    "thread-loader": "^2.1.2",
     "webpack-cli": "^3.0.3"
   },
   "babel": {
-      "presets": [
-          "es2015",
-          "react",
-          "stage-0"
-        ],
-        "plugins": [
-          "transform-object-rest-spread",
-          "transform-flow-strip-types"
-        ]
-    },
-    "proxy": "http://localhost:5000"
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-flow-strip-types"
+    ]
+  },
+  "proxy": "http://localhost:5000"
 }
