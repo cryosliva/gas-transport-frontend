@@ -44,6 +44,7 @@ const SignIn = ({status, onClick, onEmailChange, onPasswordChange}: SignInProps)
                     />
                     <Input
                         placeholder="********"
+                        type="password"
                         name="password"
                         onChange={onPasswordChange}
                     />
