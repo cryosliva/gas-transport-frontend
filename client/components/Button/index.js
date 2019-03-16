@@ -6,18 +6,18 @@ import cn from 'classnames';
 import css from './style.css';
 
 type ButtonProps = {
-    theme: string,
-    className: string,
+    theme?: string,
+    className?: string,
     children: Node,
 };
 
 const Button = ({
-    theme,
+    theme = 'default',
     className,
     children,
     ...props
 }: ButtonProps) => (
-    <button className={cn(css.root, className, css[theme])} {...props}>
+    <button className={cn(css.root, css[theme], className)} {...props}>
         {children}
     </button>
 );

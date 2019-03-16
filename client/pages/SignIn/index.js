@@ -86,18 +86,19 @@ const enhance = compose(
             fetchRoles();
 
             fetch('/api/sign-in', {
-                    method: 'POST',
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({email, password}),
-                })
-                .then(res => res.json())
-                .then(roles => (
-                    roles.length > 0
-                        ? fetchRolesCompleted()
-                        : fetchRolesFailed()
-                ))
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({email, password}),
+            })
+                .catch(() => fetchRolesFailed())
+                // .then(res => res.json())
+                // .then(roles => (
+                //     roles.length > 0
+                //         ? fetchRolesCompleted()
+                //         : fetchRolesFailed()
+                // ))
         },
     })
 );

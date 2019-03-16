@@ -8,7 +8,7 @@ const Routes = props => (
     <BrowserRouter {...props}>
         <Switch>
             <Route exact path="/sign-in" component={SignIn} />
-            <Route exact path="/map" component={Map} />
+            <Route exact path="/" component={Map} />
         </Switch>
     </BrowserRouter>
 );

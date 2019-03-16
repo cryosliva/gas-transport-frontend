@@ -1,22 +1,16 @@
-.settings {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.filter + .filter {
-    margin-top: 15px;
-}
-
 .options {
+    max-height: 80vh;
+    overflow: auto;
+
     padding: 15px 20px;
     background-color: #E5E7E6;
     border-radius: 10px;
 }
 
-/* .icon {
+.icon {
     margin-left: 10px;
 
-    background: url('../../images/slider.png') no-repeat #E5E7E6;
+    background: url('../../images/list.png') no-repeat #E5E7E6;
     background-position: center;
     background-size: 30px 30px;
 
@@ -28,16 +22,16 @@
 
 .icon:hover {
     cursor: pointer;
-    background: url('../../images/slider.png') no-repeat #e1e9e9;
+    background: url('../../images/list.png') no-repeat #e1e9e9;
     background-position: center;
     background-size: 30px 30px;
-} */
-
-.heading {
-    margin-top: 0;
-    margin-bottom: 10px;
 }
 
-.filterButton {
-    margin-top: 15px;
+.node + .node {
+    margin-top: 10px;
+}
+
+.moreInfo {
+    margin-top: 7px;
+    color: #858786;
 }

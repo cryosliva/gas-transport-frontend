@@ -15,7 +15,7 @@ const Spinner = ({children, loading}: SpinnerProps) => (
         <div className={css.pendable}>
             <PulseLoader loading={loading} color="#36D7B7" />
         </div>
-        <div className={loading && css.loading}>
+        <div className={loading && css.loading || undefined}>
             {children}
         </div>
     </div>
