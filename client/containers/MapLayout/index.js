@@ -8,6 +8,8 @@ import {ROLES} from '../../constants/user';
 import MapSettingsToggler from '../MapSettingsToggler';
 import NodeListToggler from '../NodeListToggler';
 import AdminPageLink from '../AdminPageLink';
+import FileUploadLink from '../FileUploadLink';
+
 import MapSettings from '../MapSettings';
 import NodeList from '../NodeList';
 
@@ -37,6 +39,7 @@ const MapLayout = ({
             <MapSettingsToggler />
             <NodeListToggler />
             {isAdmin && <AdminPageLink />}
+            <FileUploadLink />
         </div>
     </div>
 );

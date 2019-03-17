@@ -7,6 +7,7 @@ import {
 import SignIn from './pages/SignIn';
 import Map from './pages/Map';
 import Manage from './pages/Manage';
+import MapData from './pages/MapData';
 
 import RouteWithRedirect from './containers/RouteWithRedirect';
 
@@ -20,6 +21,10 @@ const Routes = props => (
             <RouteWithRedirect
                 path="/manage"
                 Component={Manage}
+            />
+            <RouteWithRedirect
+                path="/map-data"
+                Component={MapData}
             />
             <RouteWithRedirect
                 path="/"
