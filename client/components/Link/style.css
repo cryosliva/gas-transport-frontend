@@ -1,0 +1,8 @@
+.root {
+    cursor: pointer;
+    color: #273E47;
+}
+
+.root:hover {
+    color: #D1462F;
+}

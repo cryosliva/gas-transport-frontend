@@ -53,7 +53,8 @@ module.exports = {
                   {
                       loader: 'css-loader',
                       options: {
-                          modules: true
+                          modules: true,
+                          localIdentName: '[name]__[local]-[hash:base64:5]',
                       },
                   },
               ]
@@ -82,6 +83,11 @@ module.exports = {
         historyApiFallback: true,
         proxy: {
             '/api/**': {
+                target: 'http://localhost:5000',
+                secure: false,
+                changeOrigin: true,
+            },
+            '**': {
                 target: 'http://localhost:5000',
                 secure: false,
                 changeOrigin: true,

@@ -1,17 +1,19 @@
 {
+  "parser": "babel-eslint",
   "extends": [
-    "plugin:flowtype/recommended",
-    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
    "plugins": [
-    "flowtype"
+    "flowtype",
+    "react"
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-multi-assign": 0,
     "indent": ["error", 4, {"ignoredNodes": ["JSXElement"]}],
     "react/jsx-indent": ["error", 4],
-    "object-curly-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "never"]
   },
   "env": {
       "browser": true,

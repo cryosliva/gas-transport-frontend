@@ -5,26 +5,29 @@ import {handleActions, type Handlers} from 'typed-actions/immer';
 import {STATUS} from '../../constants/status';
 
 import {
-    GET_ROLES,
-    GET_ROLES_COMPLETED,
-    GET_ROLES_FAILED,
+    FETCH_MAP_DATA,
+    FETCH_MAP_DATA_COMPLETED,
+    FETCH_MAP_DATA_FAILED,
     type Actions
 } from './actions';
 
 export type State = {
     status: $Keys<typeof STATUS>,
-    actions: string[],
 };
 
 export default handleActions(({
-    [GET_ROLES]: state => {
+    [FETCH_MAP_DATA]: state => {
         state.status = STATUS.pending;
     },
-    [GET_ROLES_COMPLETED]: (state, {payload}) => {
-        state.actions = payload;
+    [FETCH_MAP_DATA_COMPLETED]: (state, {payload}) => {
+        const {nodes, pipes, unrelatedPipes} = payload;
+
+        state.nodes = nodes;
+        state.pipes = pipes;
+        state.unrelatedPipes = unrelatedPipes;
         state.status = STATUS.done;
     },
-    [GET_ROLES_FAILED]: state => {
+    [FETCH_MAP_DATA_FAILED]: state => {
         state.status = STATUS.failed;
     },
 }: Handlers<State, Actions>));

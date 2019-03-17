@@ -1,28 +1,23 @@
 .settings {
-    position: absolute;
-    z-index: 1000;
+    display: flex;
+    margin-bottom: 10px;
 }
 
-.root {
-    padding: 10px;
+.filter + .filter {
+    margin-top: 15px;
+}
+
+.options {
+    padding: 15px 20px;
     background-color: #E5E7E6;
     border-radius: 10px;
-    top: 60px;
-    right: 25px;
 }
 
-.icon {
-    top: 10px;
-    right: 25px;
-
-    background: url('../../images/map-settings.png') no-repeat #E5E7E6;
-    background-position: center;
-    background-size: 30px 30px;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
+.heading {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.icon:hover {
-    cursor: pointer;
+.filterButton {
+    margin-top: 15px;
 }

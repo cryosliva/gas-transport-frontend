@@ -1,30 +1,31 @@
 /* @flow */
 
 import React, {type Node} from 'react';
-import cn from 'classnames';
 
 import css from './style.css';
 
 type CheckboxProps = {
     checked: boolean,
-    theme: string,
-    className: string,
+    theme?: string,
+    className?: string,
     children: Node,
-    onClick: () => void,
+    onChange: () => void,
+    value: string,
 };
 
 const Checkbox = ({
     checked = false,
-    theme,
-    className,
     children,
-    onClick,
-    ...props
+    onChange,
+    value,
 }: CheckboxProps) => (
     <label className={css.root}>
-        <div className={css.checkbox} onClick={onClick}>
-            {checked && <span className={css.checkmark} />}
-        </div>
+        <input
+            type="checkbox"
+            value={value} 
+            checked={checked} 
+            onChange={onChange} 
+        />
         <div className={css.title}>{children}</div>
     </label>
 );

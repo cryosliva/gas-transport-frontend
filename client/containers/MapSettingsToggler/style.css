@@ -1,0 +1,19 @@
+.icon {
+    margin-left: 10px;
+
+    background: url('../../images/slider.png') no-repeat #E5E7E6;
+    background-position: center;
+    background-size: 30px 30px;
+
+    border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background: url('../../images/slider.png') no-repeat #e1e9e9;
+    background-position: center;
+    background-size: 30px 30px;
+}
