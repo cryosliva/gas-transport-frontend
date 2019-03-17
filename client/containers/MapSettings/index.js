@@ -22,7 +22,7 @@ import {
     togglePipes,
 } from './actions';
 import css from './style.css';
-import {toggleMapSettings} from '../../containers/MapSettings';
+import {toggleMapSettings} from '../../actions/map/settings';
 import {
     fetchMapData,
     fetchMapDataCompleted,
@@ -43,8 +43,6 @@ const MapSettings = ({
     toggleNodes,
     showPipes,
     togglePipes,
-    toggleSettings,
-    showSettings,
     years,
     checkedYear,
     onYearChange,

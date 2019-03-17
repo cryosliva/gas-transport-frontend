@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react';
+import React, {Fragment} from 'react';
 import {connect} from 'react-redux';
 import {
     Map as LeafletMap,
@@ -10,6 +10,7 @@ import {
     Polyline,
 } from 'react-leaflet';
 import {compose, lifecycle} from 'recompose';
+import {pluck} from 'ramda';
 import L from 'leaflet';
 
 import icon from '../../images/marker.png';
@@ -32,6 +33,7 @@ type MapProps = {|
     showNodes: boolean,
     showPipes: boolean,
     pipes: *[],
+    unrelatedPipes: *[],
     nodes: *[],
     status: *,
 |};
@@ -60,11 +62,55 @@ const getTubeDescription = ({source, destination, capacity}): string => {
     return `<div>${sourceLine}${destinationLine}${capacityLine}</div>`;
 };
 
+const NodeMarker = ({
+    name, 
+    latitude, 
+    longitude, 
+    type, 
+    demand, 
+    supply,
+    opacity,
+}: *) => (
+    <Marker
+        title={name}
+        opacity={opacity || 1}
+        position={[latitude, longitude]}
+        icon={Icon}
+        riseOnHover={true}
+        onMouseover={e => e.target.setIcon(HoverIcon)}
+        onMouseout={e => e.target.setIcon(Icon)}
+    >
+        <Popup>
+            <NodeDescription title={name} type={type} demand={demand} supply={supply} />
+        </Popup>
+    </Marker>
+);
+
+const Pipe = ({
+    source, 
+    destination,
+    capacity,
+    opacity,
+}: *) => (
+    <Polyline
+        color="#C4CAD0"
+        weight={2.5}
+        opacity={opacity || 0.6}
+        positions={[[source.latitude, source.longitude], [destination.latitude, destination.longitude]]}
+        onClick={e => e.target.bindPopup(
+            getTubeDescription({source: source.name, destination: destination.name, capacity})
+        ).openPopup()}
+        onMouseover={e => e.target.setStyle({opacity: 0.8, weight: 4, color: '#B3B8BE'})}
+        onMouseout={e => e.target.setStyle({opacity: opacity || 0.6, weight: 2.5, color: '#C4CAD0'})}
+    />
+);
+
 const Map = ({
     zoom,
     showNodes,
     showPipes,
     pipes,
+    unrelatedPipes,
     nodes,
     status,
 }: MapProps) => {
@@ -81,36 +127,41 @@ const Map = ({
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 {
-                    showNodes && nodes && nodes.map(({latitude, longitude, name, type, demand, supply}, key) => (
-                        <Marker
-                            key={key}
-                            title={name}
-                            position={[latitude, longitude]}
-                            icon={Icon}
-                            riseOnHover={true}
-                            onMouseover={e => e.target.setIcon(HoverIcon)}
-                            onMouseout={e => e.target.setIcon(Icon)}
-                        >
-                            <Popup>
-                                <NodeDescription title={name} type={type} demand={demand} supply={supply} />
-                            </Popup>
-                        </Marker>
+                    showNodes && nodes && nodes.map((node, key) => (
+                        <NodeMarker key={key} {...node} />
                     ))
                 }
                 {
-                    showPipes && pipes && pipes.map(({capacity, destination, source}, key) => (
-                        <Polyline
-                            key={key}
-                            color="#C4CAD0"
-                            weight={2.5}
-                            opacity={0.6}
-                            positions={[[source.latitude, source.longitude], [destination.latitude, destination.longitude]]}
-                            onClick={e => e.target.bindPopup(
-                                getTubeDescription({source: source.node, destination: destination.node, capacity})
-                            ).openPopup()}
-                            onMouseover={e => e.target.setStyle({opacity: 0.8, weight: 4, color: '#B3B8BE'})}
-                            onMouseout={e => e.target.setStyle({opacity: 0.6, weight: 2.5, color: '#C4CAD0'})}
-                        />
+                    (showNodes || showPipes) && unrelatedPipes && unrelatedPipes.map(({capacity, destination, source}, key) => (
+                        <Fragment key={key}>
+                            {
+                                showNodes && !pluck('name', nodes).includes(destination.name) && (
+                                    <NodeMarker {...destination} opacity={0.5} />
+                                )
+                            }
+                            {
+                                showNodes && !pluck('name', nodes).includes(source.name) && (
+                                    <NodeMarker {...source} opacity={0.5} />
+                                )
+                            }
+                            {
+                                showPipes && (
+                                    <Pipe
+                                        capacity={capacity} 
+                                        destination={destination} 
+                                        source={source}
+                                        opacity={0.5}
+                                    />
+                                )
+                            }
+                        </Fragment>
+                    ))
+                }
+                {
+                }
+                {
+                    showPipes && pipes && pipes.map((pipe, key) => (
+                        <Pipe key={key} {...pipe} />
                     ))
                 }
             </LeafletMap>
@@ -127,6 +178,7 @@ const mapStateToProps = state => {
         showPipes: settings.showPipes,
         nodes: data.nodes,
         pipes: data.pipes,
+        unrelatedPipes: data.unrelatedPipes,
         status: data.status,
     };
 };

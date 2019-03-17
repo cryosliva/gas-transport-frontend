@@ -22,15 +22,19 @@ const NodeList = ({
 }: NodeListProps) => (
     <div className={css.options}>
         {
-            nodes.map(({latitude, longitude, name, type, demand, supply}, key) =>
+            nodes.map(({name, type, demand, supply}, key) =>
                 <div key={key} className={css.node}>
                     <Link onClick={toggleMoreInfo}>
-                        {name}
+                        {
+                            moreInfoNodes.includes(name) ? <b>{name}</b> : name
+                        }
                     </Link>
                     {
                         moreInfoNodes.includes(name) && (
                             <div className={css.moreInfo}>
-                                <b>Тип:</b> {type}
+                                <div><b>Тип:</b> {type}</div>
+                                <div><b>Потребление:</b> {demand}</div>
+                                <div><b>Производство:</b> {supply}</div>
                             </div>
                         )
                     }
@@ -55,9 +59,11 @@ const enhance = compose(
         () => ({moreInfoNodes: []}),
         {
             toggleMoreInfo: ({moreInfoNodes}) => event => {
-                const {text} = event.target;
-                const updated = moreInfoNodes.includes(text) ? without(text, moreInfoNodes) : append(text, moreInfoNodes);
-                console.log(text)
+                const {textContent} = event.target;
+                const updated = moreInfoNodes.includes(textContent)
+                    ? without(textContent, moreInfoNodes) 
+                    : append(textContent, moreInfoNodes);
+
                 return {
                     moreInfoNodes: updated,
                 };
