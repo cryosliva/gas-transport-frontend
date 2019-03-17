@@ -1,0 +1,88 @@
+.page {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.userList {
+    background-color: #FFFFFF;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.user,
+.head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.head {
+    border-bottom: 1px solid #F1F1F1;
+    padding: 25px;
+}
+
+.user {
+    align-items: center;
+    padding: 20px;
+}
+
+.edit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title {
+    margin-top: 15px;
+    border-bottom: 2px solid #F1F1F1;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #293132;
+}
+
+.deleteIcon {
+    margin-left: 10px;
+
+    background: url('../../images/delete.png') no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+}
+
+.deleteIcon:hover {
+    cursor: pointer;
+}
+
+.button {
+    margin-top: 3px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-weight: bold;
+    margin-top: 20px;
+}

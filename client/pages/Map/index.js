@@ -21,12 +21,12 @@ import {STATUS} from '../../constants/status';
 
 import MapLayout from '../../containers/MapLayout';
 import NodeDescription from '../../containers/NodeDescription';
+import {fetchMapFiltersCompleted} from '../../actions/map/filters';
 
 import {
     fetchMapData,
     fetchMapDataCompleted,
-} from './actions';
-// import css from './style.css';
+} from '../../actions/map/data';
 
 type MapProps = {|
     zoom: number,
@@ -42,14 +42,14 @@ const Icon = new L.Icon({
     iconUrl: icon,
     iconRetinaUrl: icon,
     iconSize: [20, 20],
-    popupAnchor: [0, -28]
+    popupAnchor: [0, -28],
 });
 
 const HoverIcon = new L.Icon({
     iconUrl: icon,
     iconRetinaUrl: icon,
     iconSize: [26, 26],
-    popupAnchor: [0, -28]
+    popupAnchor: [0, -28],
 });
 
 const getLine = ({title, value}) => `<div><b>${title}</b><span>: ${value}</span></div>`;
@@ -63,11 +63,11 @@ const getTubeDescription = ({source, destination, capacity}): string => {
 };
 
 const NodeMarker = ({
-    name, 
-    latitude, 
-    longitude, 
-    type, 
-    demand, 
+    name,
+    latitude,
+    longitude,
+    type,
+    demand,
     supply,
     opacity,
 }: *) => (
@@ -76,7 +76,7 @@ const NodeMarker = ({
         opacity={opacity || 1}
         position={[latitude, longitude]}
         icon={Icon}
-        riseOnHover={true}
+        riseOnHover
         onMouseover={e => e.target.setIcon(HoverIcon)}
         onMouseout={e => e.target.setIcon(Icon)}
     >
@@ -87,7 +87,7 @@ const NodeMarker = ({
 );
 
 const Pipe = ({
-    source, 
+    source,
     destination,
     capacity,
     opacity,
@@ -97,9 +97,7 @@ const Pipe = ({
         weight={2.5}
         opacity={opacity || 0.6}
         positions={[[source.latitude, source.longitude], [destination.latitude, destination.longitude]]}
-        onClick={e => e.target.bindPopup(
-            getTubeDescription({source: source.name, destination: destination.name, capacity})
-        ).openPopup()}
+        onClick={e => e.target.bindPopup(getTubeDescription({source: source.name, destination: destination.name, capacity}),).openPopup()}
         onMouseover={e => e.target.setStyle({opacity: 0.8, weight: 4, color: '#B3B8BE'})}
         onMouseout={e => e.target.setStyle({opacity: opacity || 0.6, weight: 2.5, color: '#C4CAD0'})}
     />
@@ -147,8 +145,8 @@ const Map = ({
                             {
                                 showPipes && (
                                     <Pipe
-                                        capacity={capacity} 
-                                        destination={destination} 
+                                        capacity={capacity}
+                                        destination={destination}
                                         source={source}
                                         opacity={0.5}
                                     />
@@ -169,7 +167,7 @@ const Map = ({
     );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     const {data = {}, settings = {}} = state.map;
 
     return {
@@ -186,17 +184,30 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
     fetchMapData,
     fetchMapDataCompleted,
+    fetchMapFiltersCompleted,
 };
 
 const getInitialMapData = () => {
     const data = fetch('/api/map', {
         method: 'POST',
         headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify({year: 2019, snapshotId: 'test'}),
     })
-        .then(res => res.json())
+        .then(res => res.json());
+
+    return data;
+};
+
+const getMapFilters = () => {
+    const data = fetch('/api/node/filter', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+        .then(res => res.json());
 
     return data;
 };
@@ -209,10 +220,13 @@ const enhance = compose(
     lifecycle({
         componentWillMount() {
             this.props.fetchMapData();
-            getInitialMapData().then(posts => {
+            getInitialMapData().then((posts) => {
                 this.props.fetchMapDataCompleted(posts);
+            });
+            getMapFilters().then(filters => {
+                this.props.fetchMapFiltersCompleted(filters);
             })
-        }
+        },
     }),
 );
 

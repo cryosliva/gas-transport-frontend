@@ -2,8 +2,6 @@
 
 import React from 'react';
 import {connect} from 'react-redux';
-import {pathOr} from 'ramda';
-import cn from 'classnames';
 import {
     compose, 
     withStateHandlers,
@@ -20,14 +18,15 @@ import {
 import {
     toggleNodes,
     togglePipes,
-} from './actions';
-import css from './style.css';
-import {toggleMapSettings} from '../../actions/map/settings';
+    toggleMapSettings,
+} from '../../actions/map/settings';
 import {
     fetchMapData,
     fetchMapDataCompleted,
     fetchMapDataFailed,
-} from '../../pages/Map/actions';
+} from '../../actions/map/data';
+
+import css from './style.css';
 
 type MapSettingsProps = {
     showNodes: boolean,
@@ -124,6 +123,8 @@ const mapStateToProps = (state): MapSettingsProps => {
         showPipes: settings.showPipes,
         years: filters.years,
         types: filters.types,
+        regions: filters.regions,
+        snapshots: filters.snapshots,
     };
 };
 
@@ -139,8 +140,11 @@ const mapDispatchToProps = {
 const enhance = compose(
     connect(mapStateToProps, mapDispatchToProps),
     withStateHandlers(
-        ({types}) => ({
-            checkedYear: '2018',
+        ({
+            types,
+            years,
+        }) => ({
+            checkedYear: String(years[years.length - 1]),
             checkedTypes: types,
         }),
         {
@@ -173,9 +177,10 @@ const enhance = compose(
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    year: checkedYear,
+                    year: Number(checkedYear),
                     type: checkedTypes,
                     snapshotId: 'test',
+                    region: null,
                 }),
             })
                 .then(res => res.json())

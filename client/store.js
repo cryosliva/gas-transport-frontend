@@ -1,18 +1,23 @@
 import {createStore, combineReducers} from 'redux';
 
-import mapSettingsReducers from './containers/MapSettings/reducers';
-import mapReducers from './pages/Map/reducers';
-import signInReducers from './pages/SignIn/reducers';
+import mapSettingsReducers from './reducers/map/settings';
+import mapDataReducers from './reducers/map/data';
+import mapFiltersReducers from './reducers/map/filters';
+
+import userReducers from './containers/RouteWithRedirect/reducers';
+
+import manageReducers from './pages/Manage/reducers';
 
 const mapReducer = combineReducers({
     settings: mapSettingsReducers,
-    data: mapReducers,
-    filters: mapSettingsReducers,
+    data: mapDataReducers,
+    filters: mapFiltersReducers,
 });
 
 const reducer = combineReducers({
     map: mapReducer,
-    signIn: signInReducers,
+    manage: manageReducers,
+    user: userReducers,
 });
 
 const initialState = {
@@ -24,15 +29,12 @@ const initialState = {
             showMapSettings: false,
             showNodeList: false,
         },
-        filters: {
-            types: ['FIELD', 'CS', 'UGS'],
-            years: [2017, 2018, 2019],
-            region: null,
-            snapshotId: 'test',
-        },
+        filters: {},
         data: {},
     },
     signIn: {},
+    manage: {},
+    user: {},
 };
 
 const store = createStore(
