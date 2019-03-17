@@ -14,7 +14,7 @@ export const {
     [GET_ROLES_FAILED]: getRolesFailed,
 } = actions = createActions({
     [GET_ROLES]: empty,
-    [GET_ROLES_COMPLETED]: empty,
+    [GET_ROLES_COMPLETED]: (x: *) => action(x),
     [GET_ROLES_FAILED]: empty,
 });
 

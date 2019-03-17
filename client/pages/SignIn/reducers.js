@@ -13,18 +13,18 @@ import {
 
 export type State = {
     status: $Keys<typeof STATUS>,
+    actions: string[],
 };
 
 export default handleActions(({
     [GET_ROLES]: state => {
         state.status = STATUS.pending;
     },
-    [GET_ROLES_COMPLETED]: state => {
+    [GET_ROLES_COMPLETED]: (state, {payload}) => {
+        state.actions = payload;
         state.status = STATUS.done;
-        state.auth = true;
     },
     [GET_ROLES_FAILED]: state => {
         state.status = STATUS.failed;
-        state.auth = false;
     },
 }: Handlers<State, Actions>));

@@ -26,16 +26,21 @@ import {toggleMapSettings} from '../../actions/map/settings';
 import {
     fetchMapData,
     fetchMapDataCompleted,
+    fetchMapDataFailed,
 } from '../../pages/Map/actions';
 
 type MapSettingsProps = {
     showNodes: boolean,
+    toggleNodes: () => void,
     showPipes: boolean,
-};
-
-type EnhancedProps = {
-    showSettings: boolean,
-    toggleSettings: () => void,
+    togglePipes: () => void,
+    years: string[],
+    checkedYear: string,
+    onYearChange: () => void,
+    types: string[],
+    checkedTypes: string[],
+    onTypesChange: () => void,
+    applyFilters: () => void,
 };
 
 const MapSettings = ({
@@ -50,7 +55,7 @@ const MapSettings = ({
     checkedTypes,
     onTypesChange,
     applyFilters,
-}: MapSettingsProps & EnhancedProps) => (
+}: MapSettingsProps) => (
     <div className={css.options}>
         <div className={css.filter}>
             <h3 className={css.heading}>
@@ -111,7 +116,7 @@ const MapSettings = ({
     </div>
 );
 
-const mapStateToProps = (state: State): MapSettingsProps => {
+const mapStateToProps = (state): MapSettingsProps => {
     const {settings, filters} = state.map;
 
     return {
@@ -128,6 +133,7 @@ const mapDispatchToProps = {
     toggleMapSettings,
     fetchMapData,
     fetchMapDataCompleted,
+    fetchMapDataFailed,
 };
 
 const enhance = compose(
@@ -155,6 +161,7 @@ const enhance = compose(
             checkedTypes,
             fetchMapData,
             fetchMapDataCompleted,
+            fetchMapDataFailed,
             toggleMapSettings,
         }) => () => {
             fetchMapData();
@@ -173,7 +180,7 @@ const enhance = compose(
             })
                 .then(res => res.json())
                 .then(fetchMapDataCompleted)
-                // .catch(() => fetchRolesFailed())
+                .catch(() => fetchMapDataFailed())
         },
     }),
 );

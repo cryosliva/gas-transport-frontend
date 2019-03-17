@@ -1,7 +1,6 @@
 /* @flow */
 
 import React, {type Node} from 'react';
-import cn from 'classnames';
 
 import css from './style.css';
 
@@ -16,17 +15,17 @@ type CheckboxProps = {
 
 const Checkbox = ({
     checked = false,
-    // theme,
-    // className,
     children,
     onChange,
     value,
 }: CheckboxProps) => (
     <label className={css.root}>
-        <input type="checkbox" value={value} checked={checked} onChange={onChange} />
-        {/* <div className={css.checkbox} onClick={onClick} value={value}>
-            {checked && <span className={css.checkmark} />}
-        </div> */}
+        <input
+            type="checkbox"
+            value={value} 
+            checked={checked} 
+            onChange={onChange} 
+        />
         <div className={css.title}>{children}</div>
     </label>
 );

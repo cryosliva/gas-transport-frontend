@@ -92,13 +92,9 @@ const enhance = compose(
                 },
                 body: JSON.stringify({email, password}),
             })
+                .then(res => res.json())
+                .then(fetchRolesCompleted)
                 .catch(() => fetchRolesFailed())
-                // .then(res => res.json())
-                // .then(roles => (
-                //     roles.length > 0
-                //         ? fetchRolesCompleted()
-                //         : fetchRolesFailed()
-                // ))
         },
     })
 );

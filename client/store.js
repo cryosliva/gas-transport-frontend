@@ -3,7 +3,6 @@ import {createStore, combineReducers} from 'redux';
 import mapSettingsReducers from './containers/MapSettings/reducers';
 import mapReducers from './pages/Map/reducers';
 import signInReducers from './pages/SignIn/reducers';
-// import mapSettingsReducers from
 
 const mapReducer = combineReducers({
     settings: mapSettingsReducers,
@@ -26,15 +25,10 @@ const initialState = {
             showNodeList: false,
         },
         filters: {
-            // all: {
             types: ['FIELD', 'CS', 'UGS'],
             years: [2017, 2018, 2019],
             region: null,
             snapshotId: 'test',
-            // },
-            // checked: {
-
-            // },
         },
         data: {},
     },
