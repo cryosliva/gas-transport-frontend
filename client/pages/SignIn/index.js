@@ -15,10 +15,11 @@ import Input from '../../components/Input';
 import Spinner from '../../components/Spinner';
 
 import {
-    getRoles,
-    getRolesCompleted,
-    getRolesFailed,
-} from './actions.js';
+    fetchUserInfo,
+    fetchUserInfoCompleted,
+    fetchUserInfoFailed,
+} from '../../containers/RouteWithRedirect/actions';
+
 import css from './style.css';
 
 const AuthorizationError = () => (
@@ -38,17 +39,25 @@ const SignIn = ({status, onClick, onEmailChange, onPasswordChange}: SignInProps)
             <Spinner loading={status === STATUS.pending}>
                 <form className={css.form}>
                     <Input
+                        className={css.input}
                         placeholder="example@hse.ru"
                         name="email"
                         onChange={onEmailChange}
                     />
                     <Input
+                        className={css.input}
                         placeholder="********"
                         type="password"
                         name="password"
                         onChange={onPasswordChange}
                     />
-                    <Button theme="active" onClick={onClick}>ВОЙТИ</Button>
+                    <Button
+                        theme="active" 
+                        onClick={onClick}
+                        className={css.button}
+                    >
+                        ВОЙТИ
+                    </Button>
                 </form>
             </Spinner>
         </div>
@@ -56,13 +65,13 @@ const SignIn = ({status, onClick, onEmailChange, onPasswordChange}: SignInProps)
 );
 
 const mapStateToProps = state => ({
-    status: state.signIn.status,
+    status: state.user.status,
 });
 
 const mapDispatchToProps = {
-    fetchRoles: getRoles,
-    fetchRolesCompleted: getRolesCompleted,
-    fetchRolesFailed: getRolesFailed,
+    fetchUserInfo,
+    fetchUserInfoCompleted,
+    fetchUserInfoFailed,
 };
 
 const enhance = compose(
@@ -78,12 +87,12 @@ const enhance = compose(
         onClick: ({
             email,
             password,
-            fetchRoles,
-            fetchRolesCompleted,
-            fetchRolesFailed,
+            fetchUserInfo,
+            fetchUserInfoCompleted,
+            fetchUserInfoFailed,
         }) => event => {
             event.preventDefault();
-            fetchRoles();
+            fetchUserInfo();
 
             fetch('/api/sign-in', {
                 method: 'POST',
@@ -93,8 +102,7 @@ const enhance = compose(
                 body: JSON.stringify({email, password}),
             })
                 .then(res => res.json())
-                .then(fetchRolesCompleted)
-                .catch(() => fetchRolesFailed())
+                .then(roles => roles.length > 0 ? fetchUserInfoCompleted(roles) : fetchUserInfoFailed());
         },
     })
 );

@@ -5,9 +5,9 @@ import {handleActions, type Handlers} from 'typed-actions/immer';
 import {STATUS} from '../../constants/status';
 
 import {
-    GET_ROLES,
-    GET_ROLES_COMPLETED,
-    GET_ROLES_FAILED,
+    FETCH_USER_INFO,
+    FETCH_USER_INFO_COMPLETED,
+    FETCH_USER_INFO_FAILED,
     type Actions
 } from './actions';
 
@@ -17,14 +17,14 @@ export type State = {
 };
 
 export default handleActions(({
-    [GET_ROLES]: state => {
+    [FETCH_USER_INFO]: state => {
         state.status = STATUS.pending;
     },
-    [GET_ROLES_COMPLETED]: (state, {payload}) => {
+    [FETCH_USER_INFO_COMPLETED]: (state, {payload}) => {
         state.actions = payload;
         state.status = STATUS.done;
     },
-    [GET_ROLES_FAILED]: state => {
+    [FETCH_USER_INFO_FAILED]: state => {
         state.status = STATUS.failed;
     },
 }: Handlers<State, Actions>));

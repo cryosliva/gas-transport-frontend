@@ -1,13 +1,18 @@
 .root {
     outline: 0;
     border: 1px solid #D1D4D8;
-    padding: 15px;
-
+   
     border-radius: 2px;
 
-    min-width: 330px;
-
-    font-size: 15px;
-
     background-color: #E5E9ED;
+}
+
+.size_m {
+    padding: 15px;
+    font-size: 15px;
+    min-width: 330px;
+}
+
+.size_s {
+    padding: 0 10px;
 }

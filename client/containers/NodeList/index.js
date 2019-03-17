@@ -6,7 +6,7 @@ import {compose, withStateHandlers} from 'recompose';
 import {without, append} from 'ramda';
 
 import {Link} from '../../components';
-import NodeDescription from '../NodeDescription';
+import {NODE_TYPES} from '../../constants/map';
 
 import css from './style.css';
 
@@ -32,7 +32,7 @@ const NodeList = ({
                     {
                         moreInfoNodes.includes(name) && (
                             <div className={css.moreInfo}>
-                                <div><b>Тип:</b> {type}</div>
+                                <div><b>Тип:</b> {NODE_TYPES[type]}</div>
                                 <div><b>Потребление:</b> {demand}</div>
                                 <div><b>Производство:</b> {supply}</div>
                             </div>

@@ -5,6 +5,7 @@ import Checkbox from './Checkbox';
 import RadioButton from './RadioButton';
 import Spinner from './Spinner';
 import Link from './Link';
+import Input from './Input';
 
 module.exports = {
     Button,
@@ -12,4 +13,5 @@ module.exports = {
     RadioButton,
     Spinner,
     Link,
+    Input,
 };

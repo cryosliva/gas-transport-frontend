@@ -9,10 +9,13 @@ import {
     FETCH_MAP_DATA_COMPLETED,
     FETCH_MAP_DATA_FAILED,
     type Actions
-} from './actions';
+} from '../../actions/map/data';
 
 export type State = {
     status: $Keys<typeof STATUS>,
+    nodes: *[],
+    pipes: *[],
+    unrelatedPipes: *[],
 };
 
 export default handleActions(({
