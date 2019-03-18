@@ -25,9 +25,17 @@ export default handleActions(({
         state.showPipes = !state.showPipes;
     },
     [TOGGLE_MAP_SETTINGS]: state => {
+        if (state.showNodeList) {
+            state.showNodeList = false;
+        }
+
         state.showMapSettings = !state.showMapSettings;
     },
     [TOGGLE_NODE_LIST]: state => {
+        if (state.showMapSettings) {
+            state.showMapSettings = false;
+        }
+
         state.showNodeList = !state.showNodeList;
     },
 }: Handlers<State, Actions>));

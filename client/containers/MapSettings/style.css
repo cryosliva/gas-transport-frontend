@@ -7,10 +7,15 @@
     margin-top: 15px;
 }
 
-.options {
+.popup {
     padding: 15px 20px;
     background-color: #E5E7E6;
     border-radius: 10px;
+}
+
+.options {
+    max-height: 80vh;
+    overflow: auto;
 }
 
 .heading {

@@ -14,12 +14,16 @@ import {
     Checkbox,
     RadioButton,
 } from '../../components';
+import {NODE_TYPES} from '../../constants/map';
 
 import {
     toggleNodes,
     togglePipes,
     toggleMapSettings,
 } from '../../actions/map/settings';
+import {
+    setFilters,
+} from '../../actions/map/filters';
 import {
     fetchMapData,
     fetchMapDataCompleted,
@@ -54,57 +58,77 @@ const MapSettings = ({
     checkedTypes,
     onTypesChange,
     applyFilters,
+    regions,
+    checkedRegions,
+    onRegionsChange,
 }: MapSettingsProps) => (
-    <div className={css.options}>
-        <div className={css.filter}>
-            <h3 className={css.heading}>
+    <div className={css.popup}>
+        <div className={css.options}>
+            <div className={css.filter}>
+                <h3 className={css.heading}>
                 Показать:
-            </h3>
-            <Checkbox
-                value="nodes"
-                checked={showNodes}
-                onChange={toggleNodes}
-            >
+                </h3>
+                <Checkbox
+                    value="nodes"
+                    checked={showNodes}
+                    onChange={toggleNodes}
+                >
                 Объекты ЕСГ
-            </Checkbox>
-            <Checkbox
-                value="pipes"
-                checked={showPipes} 
-                onChange={togglePipes}
-            >
+                </Checkbox>
+                <Checkbox
+                    value="pipes"
+                    checked={showPipes} 
+                    onChange={togglePipes}
+                >
                 Газопроводы
-            </Checkbox>
-        </div>
-        <div className={css.filter}>
-            <h3 className={css.heading}>Год:</h3>
-            {
-                years.map((option, key) => 
-                    <RadioButton
-                        key={key}
-                        onChange={onYearChange}
-                        name="year"
-                        value={String(option)} 
-                        checked={checkedYear}
-                    >
-                        {option}
-                    </RadioButton>
-                )
-            }
-        </div>
-        <div className={css.filter}>
-            <h3 className={css.heading}>Тип:</h3>
-            {
-                types.map((option, key) => 
-                    <Checkbox
-                        key={key}
-                        value={option}
-                        onChange={onTypesChange}
-                        checked={checkedTypes.includes(option)}
-                    >
-                        {option}
-                    </Checkbox>
-                )
-            }
+                </Checkbox>
+            </div>
+            <div className={css.filter}>
+                <h3 className={css.heading}>Год:</h3>
+                {
+                    years.map((option, key) => 
+                        <RadioButton
+                            key={key}
+                            onChange={onYearChange}
+                            name="year"
+                            value={String(option)} 
+                            checked={checkedYear}
+                        >
+                            {option}
+                        </RadioButton>
+                    )
+                }
+            </div>
+            <div className={css.filter}>
+                <h3 className={css.heading}>Тип:</h3>
+                {
+                    types.map((option, key) => 
+                        <Checkbox
+                            key={key}
+                            value={option}
+                            onChange={onTypesChange}
+                            checked={checkedTypes.includes(option)}
+                        >
+                            {NODE_TYPES[option]}
+                        </Checkbox>
+                    )
+                }
+            </div>
+            <div className={css.filter}>
+                <h3 className={css.heading}>Регионы:</h3>
+                {
+                    regions.map((option, key) => 
+                        <Checkbox
+                            key={key}
+                            value={option}
+                            onChange={onRegionsChange}
+                            checked={checkedRegions.includes(option)}
+                        >
+                            {option}
+                        </Checkbox>
+                    )
+                }
+            </div>
         </div>
         <Button
             onClick={applyFilters}
@@ -115,15 +139,19 @@ const MapSettings = ({
     </div>
 );
 
-const mapStateToProps = (state): MapSettingsProps => {
+const mapStateToProps = (state): * => {
     const {settings, filters} = state.map;
+    const {years, types, regions} = filters;
 
     return {
+        years,
+        types,
+        regions,
         showNodes: settings.showNodes,
         showPipes: settings.showPipes,
-        years: filters.years,
-        types: filters.types,
-        regions: filters.regions,
+        checkedYear: filters.checkedYear || String(years[years.length - 1]),
+        checkedTypes: filters.checkedTypes || types,
+        checkedRegions: filters.checkedRegions || regions,
         snapshots: filters.snapshots,
     };
 };
@@ -135,17 +163,20 @@ const mapDispatchToProps = {
     fetchMapData,
     fetchMapDataCompleted,
     fetchMapDataFailed,
+    setFilters,
 };
 
 const enhance = compose(
     connect(mapStateToProps, mapDispatchToProps),
     withStateHandlers(
         ({
-            types,
-            years,
+            checkedYear,
+            checkedTypes,
+            checkedRegions,
         }) => ({
-            checkedYear: String(years[years.length - 1]),
-            checkedTypes: types,
+            checkedYear,
+            checkedTypes,
+            checkedRegions,
         }),
         {
             onYearChange: () => event => ({checkedYear: event.target.value}),
@@ -157,16 +188,26 @@ const enhance = compose(
                     checkedTypes: updated,
                 };
             },
+            onRegionsChange: ({checkedRegions}) => event => {
+                const {value} = event.target;
+                const updated = checkedRegions.includes(value) ? without(value, checkedRegions) : append(value, checkedRegions);
+                
+                return {
+                    checkedRegions: updated,
+                };
+            },
         },
     ),
     withHandlers({
         applyFilters: ({
             checkedYear,
             checkedTypes,
+            checkedRegions,
             fetchMapData,
             fetchMapDataCompleted,
             fetchMapDataFailed,
             toggleMapSettings,
+            setFilters,
         }) => () => {
             fetchMapData();
             toggleMapSettings();
@@ -180,11 +221,14 @@ const enhance = compose(
                     year: Number(checkedYear),
                     type: checkedTypes,
                     snapshotId: 'test',
-                    region: null,
+                    region: checkedRegions,
                 }),
             })
                 .then(res => res.json())
-                .then(fetchMapDataCompleted)
+                .then(res => {
+                    fetchMapDataCompleted(res);
+                    setFilters({checkedYear, checkedTypes, checkedRegions});
+                })
                 .catch(() => fetchMapDataFailed())
         },
     }),
