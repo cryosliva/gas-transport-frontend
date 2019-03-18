@@ -8,15 +8,21 @@ import css from './style.css';
 type LinkProps = {
     className?: string,
     children: Node,
-    onClick: () => void,
+    onClick?: () => void,
+    href?: string,
 };
 
 const Link = ({
     className,
     children,
     onClick,
+    href,
 }: LinkProps) => (
-    <a className={cn(css.root, className)} onClick={onClick}>
+    <a
+        className={cn(css.root, className)}
+        onClick={onClick}
+        href={href}
+    >
         {children}
     </a>
 );
