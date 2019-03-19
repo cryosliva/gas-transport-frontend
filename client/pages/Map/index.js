@@ -187,13 +187,13 @@ const mapDispatchToProps = {
     fetchMapFiltersCompleted,
 };
 
-const getInitialMapData = () => {
+const getInitialMapData = ({years}) => {
     const data = fetch('/api/map', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({year: 2019, snapshotId: 'test'}),
+        body: JSON.stringify({year: years[years.length - 1], snapshotId: 'test'}),
     })
         .then(res => res.json());
 
@@ -220,12 +220,17 @@ const enhance = compose(
     lifecycle({
         componentWillMount() {
             this.props.fetchMapData();
-            getInitialMapData().then((posts) => {
-                this.props.fetchMapDataCompleted(posts);
-            });
-            getMapFilters().then(filters => {
-                this.props.fetchMapFiltersCompleted(filters);
-            })
+            getMapFilters()
+                .then(filters => {
+                    this.props.fetchMapFiltersCompleted(filters);
+
+                    return filters;
+                })
+                .then(filters => {
+                    getInitialMapData(filters).then((posts) => {
+                        this.props.fetchMapDataCompleted(posts);
+                    });
+                })
         },
     }),
 );

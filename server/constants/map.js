@@ -1,7 +1,7 @@
 const MAP_SETTINGS = {
     region: null,
-    type: [],
-    year: 2019,
+    type: null,
+    year: 2018,
     snapshotId: 'test',
 };
 

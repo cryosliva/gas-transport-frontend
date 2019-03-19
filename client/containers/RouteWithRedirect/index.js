@@ -38,6 +38,16 @@ const PAGES = {
         redirectTo: '/sign-in',
         path: '/settings',
     },
+    '/map-data': {
+        role: 'ADMIN',
+        redirectTo: '/',
+        path: '/map-data',
+    },
+    '/user-settings': {
+        role: 'USER',
+        redirectTo: '/sign-in',
+        path: '/user-settings',
+    },
 };
 
 const RouteWithRedirect = ({path, Component, auth, actions}: *) => {

@@ -8,6 +8,10 @@ import {
     FETCH_MAP_DATA,
     FETCH_MAP_DATA_COMPLETED,
     FETCH_MAP_DATA_FAILED,
+
+    UPLOAD_FILE,
+    UPLOAD_FILE_COMPLETED,
+    UPLOAD_FILE_FAILED,
     type Actions
 } from '../../actions/map/data';
 
@@ -31,6 +35,16 @@ export default handleActions(({
         state.status = STATUS.done;
     },
     [FETCH_MAP_DATA_FAILED]: state => {
+        state.status = STATUS.failed;
+    },
+
+    [UPLOAD_FILE]: state => {
+        state.status = STATUS.pending;
+    },
+    [UPLOAD_FILE_COMPLETED]: (state, {payload}) => {
+        state.status = STATUS.done;
+    },
+    [UPLOAD_FILE_FAILED]: state => {
         state.status = STATUS.failed;
     },
 }: Handlers<State, Actions>));
