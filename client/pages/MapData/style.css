@@ -61,11 +61,15 @@ h2 {
 .subtitle {
     font-weight: bold;
     margin-bottom: 10px;
+
+    text-overflow: ellipsis;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    /* justify-items: start; */
 }
 
 .centered {
@@ -75,4 +79,14 @@ h2 {
 .grid + .grid,
 .upload {
     margin-top: 15px;
+}
+
+.line {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.filename {
+    text-overflow: ellipsis;
+    max-width: 100%;
 }

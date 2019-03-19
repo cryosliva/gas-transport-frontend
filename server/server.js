@@ -4,6 +4,8 @@ const auth = require('basic-auth-token');
 const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
 const cookieParser = require('cookie-parser');
+const multipart = require('connect-multiparty');
+const multiparty = require('multiparty');
 
 const hosts = require('./hosts');
 const {MAP_SETTINGS} = require('./constants/map');
@@ -13,6 +15,8 @@ const gtv = hosts('gtv');
 const port = process.env.PORT || 5000;
 
 const app = express();
+
+const multipartMiddleware = multipart();
 
 app.set('port', port);
 
@@ -111,6 +115,34 @@ app.get('/api/user/info', async (req, res) => {
         .catch(() => res.send([]));
 });
 
+
+app.post('/api/user/info', async (req, res) => {
+    const token = req.cookies && req.cookies.auth || undefined;
+    console.log(req.body)
+    const {password} = req.body;
+
+    const userInfo = await fetch(`${gtv}/user/info`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Basic ${token}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            password,
+        }),
+    });
+
+    userInfo.json()
+        .then(response => {
+            res.clearCookie('auth');
+            res.send(response);
+        })
+        .catch(() => {
+            res.clearCookie('auth');
+            res.send({});
+        });
+});
+
 app.get('/api/admin/user/list', async (req, res) => {
     const token = req.cookies && req.cookies.auth || undefined;
 
@@ -188,6 +220,36 @@ app.post('/api/admin/user/make-admin', async (req, res) => {
             res.send(response);
         })
         .catch(() => res.send({}));
+});
+
+app.post('/api/data/upload', multipartMiddleware, async (req, res) => {
+    const token = req.cookies && req.cookies.auth || undefined;
+    const {file} = req.files;
+    const {year, snapshotId} = req.body;
+    const {headers} = req;
+    console.log(headers);
+    const form = new multiparty.Form();
+    console.log(form)
+
+    const userList = await fetch(`${gtv}/data/upload`, {
+        method: 'POST',
+        headers: {
+            'accept': '*/*',
+            'Authorization': `Basic ${token}`,
+            'Content-Type': headers['content-type'],
+        },
+        body: {
+            file, year, snapshotId,
+        },
+    });
+    console.log(userList);
+
+    userList.json()
+        .then(response => {
+            console.log(response)
+            res.send(response);
+        })
+        .catch(error => console.log(error));
 });
 
 app.get('*', (req, res) => {

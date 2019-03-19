@@ -1,0 +1,48 @@
+.page {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.head,
+.line {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    justify-items: flex-start;
+    padding-bottom: 15px;
+}
+
+.head {
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.line {
+    margin: 15px 0;
+}
+
+.title {
+    margin-top: 15px;
+    border-bottom: 2px solid #F1F1F1;
+}

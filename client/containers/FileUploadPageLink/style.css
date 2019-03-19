@@ -18,14 +18,3 @@
     background-position: center;
     background-size: 30px 30px;
 }
-
-.imageUpload > input
-{
-    display: none;
-}
-
-.imageUpload img
-{
-    width: 80px;
-    cursor: pointer;
-}

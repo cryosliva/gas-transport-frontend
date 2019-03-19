@@ -6,10 +6,10 @@ import {Link} from '../../components';
 
 import css from './style.css';
 
-const FileUpload = () => (
+const FileUploadPageLink = () => (
     <Link href="/map-data">
         <div className={css.icon} />
     </Link>
 );
 
-export default FileUpload;
+export default FileUploadPageLink;

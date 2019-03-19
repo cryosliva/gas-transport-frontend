@@ -8,6 +8,10 @@ import {
     FETCH_USER_INFO,
     FETCH_USER_INFO_COMPLETED,
     FETCH_USER_INFO_FAILED,
+
+    CHANGE_PASSWORD,
+    CHANGE_PASSWORD_COMPLETED,
+    CHANGE_PASSWORD_FAILED,
     type Actions
 } from './actions';
 
@@ -25,6 +29,16 @@ export default handleActions(({
         state.status = STATUS.done;
     },
     [FETCH_USER_INFO_FAILED]: state => {
+        state.status = STATUS.failed;
+    },
+
+    [CHANGE_PASSWORD]: state => {
+        state.status = STATUS.pending;
+    },
+    [CHANGE_PASSWORD_COMPLETED]: (state, {payload}) => {
+        state.status = STATUS.done;
+    },
+    [CHANGE_PASSWORD_FAILED]: state => {
         state.status = STATUS.failed;
     },
 }: Handlers<State, Actions>));
