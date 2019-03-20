@@ -40,7 +40,7 @@ const MapLayout = ({
             <MapSettingsToggler />
             <NodeListToggler />
             {isAdmin && <AdminPageLink />}
-            {isAdmin && <FileUploadPageLink />}
+            {/* {isAdmin && <FileUploadPageLink />} */}
             <UserSettingsLink />
         </div>
     </div>
