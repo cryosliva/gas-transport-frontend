@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, {type Node} from 'react';
+import cn from 'classnames';
 
 import css from './style.css';
 
@@ -18,8 +19,9 @@ const Checkbox = ({
     children,
     onChange,
     value,
+    className,
 }: CheckboxProps) => (
-    <label className={css.root}>
+    <label className={cn(css.root, className)}>
         <input
             type="checkbox"
             value={value} 

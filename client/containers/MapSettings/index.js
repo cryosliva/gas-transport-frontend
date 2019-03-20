@@ -61,6 +61,8 @@ const MapSettings = ({
     regions,
     checkedRegions,
     onRegionsChange,
+    toggleAllTypes,
+    toggleAllRegions,
 }: MapSettingsProps) => (
     <div className={css.popup}>
         <div className={css.options}>
@@ -101,6 +103,15 @@ const MapSettings = ({
             </div>
             <div className={css.filter}>
                 <h3 className={css.heading}>Тип:</h3>
+                {types.length > 0 && (
+                    <Checkbox
+                        className={css.checkAll}
+                        onChange={toggleAllTypes} 
+                        checked={checkedTypes.length === types.length}
+                    >
+                        <b>Выбрать все</b>
+                    </Checkbox>
+                )}
                 {
                     types.map((option, key) => 
                         <Checkbox
@@ -116,6 +127,15 @@ const MapSettings = ({
             </div>
             <div className={css.filter}>
                 <h3 className={css.heading}>Регионы:</h3>
+                {regions.length > 0 && (
+                    <Checkbox
+                        className={css.checkAll}
+                        onChange={toggleAllRegions} 
+                        checked={checkedRegions.length === regions.length}
+                    >
+                        <b>Выбрать все</b>
+                    </Checkbox>
+                )}
                 {
                     regions.map((option, key) => 
                         <Checkbox
@@ -173,10 +193,14 @@ const enhance = compose(
             checkedYear,
             checkedTypes,
             checkedRegions,
+            types,
+            regions,
         }) => ({
             checkedYear,
             checkedTypes,
             checkedRegions,
+            types,
+            regions,
         }),
         {
             onYearChange: () => event => ({checkedYear: event.target.value}),
@@ -188,6 +212,9 @@ const enhance = compose(
                     checkedTypes: updated,
                 };
             },
+            toggleAllTypes: ({types = [], checkedTypes = []}) => () => ({
+                checkedTypes: checkedTypes.length === types.length ? [] : types,
+            }),
             onRegionsChange: ({checkedRegions}) => event => {
                 const {value} = event.target;
                 const updated = checkedRegions.includes(value) ? without(value, checkedRegions) : append(value, checkedRegions);
@@ -196,6 +223,9 @@ const enhance = compose(
                     checkedRegions: updated,
                 };
             },
+            toggleAllRegions: ({regions = [], checkedRegions = []}) => () => ({
+                checkedRegions: checkedRegions.length === regions.length ? [] : regions,
+            }),
         },
     ),
     withHandlers({
